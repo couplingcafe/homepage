@@ -60,7 +60,7 @@ function initAnalytics () {
  * Init XHR handler to subscribe.
  */
 function initSubscribeForm () {
-  const form = $('.subscribeForm');
+  const form = $('form.subscribe');
   if (!form) { return; }
 
   const button = form.querySelector('.submit');
@@ -98,7 +98,6 @@ function initSubscribeForm () {
     xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
     xhr.send(JSON.stringify({
       email: $('[name="email"]').value,
-      group: group,
       source: document.title
     }));
 
