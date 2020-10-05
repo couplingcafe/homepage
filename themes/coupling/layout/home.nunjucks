@@ -1,14 +1,19 @@
 <div id="container">
-  <section class="heroSection">
-  </section>
-
-  <section class="subscribeSection">
-    <div class="backgroundSecondary"></div>
+  <section class="hero">
     <div class="sectionInner">
-      <h2>Subscribe to Join Us in Building the Future of Computing</h2>
-      <form class="subscribeForm">
-        <input name="email" type="email" placeholder="Email address" required>
-        <button class="submit" type="submit" data-subscribe-track>Subscribe</button>
+      <div class="header">
+        <h1 class="title">Coupling</h1>
+        <img class="logo" src="/assets/img/logo.png">
+      </div>
+
+      <div class="heroText">
+        <h2>Learn Your Loved One's Language</h2>
+        <p>A fun and rewarding language learning app for couples</p>
+      </div>
+
+      <form class="subscribe">
+        <input name="email" type="email" placeholder="Enter your email address" required>
+        <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
       </form>
     </div>
   </section>

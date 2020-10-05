@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('loaded');
   initAnalytics();
   // initABTest();
-  // initLoaded();
   initSubscribeForm();
   initViewportAnimations();
 });
@@ -10,14 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function initABTest () {
   if (document.body.dataset.type !== 'home') { return; }
 
-  if (Math.random() >= 0.5 || localStorage.getItem('abTest2Title')) {
-    localStorage.setItem('abTest2Title', 1);
-    amp().setUserProperties({'abTest2Title': true});
-    $('.heroTitle').innerText = 'Read Books, Comics, Magazines in VR';
-    $('.heroSubtitle').innerHTML = 'Experience stories in comfort and vivid grand detail';
+  if (Math.random() >= 0.5 || localStorage.getItem('abTestTitle1')) {
+    localStorage.setItem('abTestTitle1', 1);
+    amp().setUserProperties({'abTestTitle1': true});
+    $('.heroTitle').innerText = '';
+    $('.heroSubtitle').innerHTML = '';
   } else {
-    amp().setUserProperties({'abTest1Title': false});
-    amp().setUserProperties({'abTest2Title': false});
+    amp().setUserProperties({'abTestTitle1': false});
   }
 }
 
@@ -34,9 +32,6 @@ function initAnalytics () {
         window.requestAnimationFrame(() => {
           const b = document.body;
           const percent = this.scrollY / (document.body.clientHeight - window.innerHeight);
-          if (percent >= 0.05 && !document.body.classList.contains('modalDismiss')) {
-            document.body.classList.add('modalDismiss');
-          }
           if (percent >= 0.25 && !scrollTracked[0]) {
             amp().logEvent('25% Scroll Depth');
             scrollTracked[0] = true;
@@ -58,22 +53,6 @@ function initAnalytics () {
         ticking = true;
       }
     });
-  }
-}
-
-function initLoaded () {
-  const img = document.getElementById('heroImage');
-  if (!img) {
-    document.body.classList.add('loaded');
-    return;
-  }
-
-  if (!img.complete || img.naturalWidth === 0) {
-    img.onload = () => {
-      document.body.classList.add('loaded');
-    };
-  } else {
-    document.body.classList.add('loaded');
   }
 }
 
@@ -99,7 +78,7 @@ function initSubscribeForm () {
     const xhr = new XMLHttpRequest();
     let endpoint = 'http://localhost:5000/mail/subscribe';
     if (process.env.NODE_ENV === 'production') {
-      endpoint = 'https://api.learncoupling.com/mail/subscribe';
+      endpoint = 'http://api.learncoupling.com:5000/mail/subscribe';
     }
     xhr.open('POST', endpoint);
 

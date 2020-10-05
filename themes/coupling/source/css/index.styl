@@ -2,20 +2,27 @@
 
 html
   background $white
+  padding 0
 
 html,
 body
   color $text
+  height 100%
   margin 0
   overflow-x hidden
-  padding 0
   position relative
+  width 100%
 
 body
   font-family 'Raleway', sans-serif
   overflow hidden
+  padding 0
   &.loaded
     opacity 1 !important
+
+p
+  font-size 24px
+  line-height 38px
 
 a
   color $primary
@@ -25,4 +32,104 @@ a
     color lighten($primary, 20%)
 
 h1, h2, h3
-  font-family 'Knicknack Fuzzy', sans-serif
+  color #3A303A
+  font-family 'Knicknack', sans-serif
+
+button,
+.button,
+input[type="submit"]
+  background $blue
+  backface-visibility hidden
+  border 0
+  border-radius 5px
+  boxShadow()
+  color $text
+  cursor pointer
+  font-size 18px
+  height 50px
+  inputHover()
+  padding 15px 30px 15px 30px
+  transform none
+  vertical-align middle
+  &[disabled]
+    background #666
+    pointer-events none
+  &:hover
+    background lighten($blue, 20%)
+  &:active
+    background darken($blue, 5%)
+
+input[type="email"],
+input[type="text"]
+  background #FAFAFA
+  border 0
+  border-radius 5px
+  boxShadow()
+  color $text
+  font-family 'Raleway'
+  font-size 18px
+  height 50px
+  inputHover()
+  margin-bottom 15px
+  text-align center 
+  transition all .2s
+  vertical-align middle
+
+#container
+  height 100%
+  width 100%
+
+.sectionInner
+  padding 0 10px
+
+section.hero
+  align-items center
+  background $purple
+  display flex
+  flex-direction column
+  padding-top 40px
+  height 100%
+  width 100%
+  text-align center
+
+  .header
+    align-items center
+    display flex
+    justify-content center
+
+    .title
+      color $yellow
+      font-family 'Titan One'
+      font-size 42px
+      line-height 56px
+      margin-bottom 0
+      margin-right 20px
+      margin-top 0
+      text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+      text-transform uppercase
+
+   .logo 
+      max-width 80px 
+
+  .heroText
+    h2
+      font-size 36px
+      margin-top 40px 
+      margin-bottom 15px 
+    p
+      margin-top 0
+
+.subscribe
+  align-items center
+  display flex
+  flex-direction column
+  justify-content center
+  margin-top 50px
+  width 100%
+
+  input,
+  button 
+    width 100%
+
+  button
+    font-weight bold

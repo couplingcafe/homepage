@@ -50,8 +50,8 @@
 {{ css('/css/index') }}
 <script src="/build.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet"> 
 <script src="https://kit.fontawesome.com/bb341dd622.js" crossorigin="anonymous" SameSite="None"></script>
 
 <body data-type="{{ page.layout }}">
