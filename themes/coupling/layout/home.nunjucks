@@ -1,0 +1,15 @@
+<div id="container">
+  <section class="heroSection">
+  </section>
+
+  <section class="subscribeSection">
+    <div class="backgroundSecondary"></div>
+    <div class="sectionInner">
+      <h2>Subscribe to Join Us in Building the Future of Computing</h2>
+      <form class="subscribeForm">
+        <input name="email" type="email" placeholder="Email address" required>
+        <button class="submit" type="submit" data-subscribe-track>Subscribe</button>
+      </form>
+    </div>
+  </section>
+</div>

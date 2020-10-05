@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+package-lock.json
+*.sw[ponmn]
+.ghpages
+db.json
+public
+public/
+db.json
+dist/

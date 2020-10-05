@@ -1,0 +1,100 @@
+$black=#333
+$blue=#9ADEFE
+$darkblue=#555588
+$purple=#D4C3E6
+$red=#F7B8B5
+$white=#FCFCFC
+$yellow=#F4E3B7
+
+$primary=$purple
+$secondary=$blue
+$tertiary=$yellow
+$text=$black
+
+boxShadow()
+  box-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+boxShadowFocus()
+  box-shadow 0px 0 0 2px $primary
+
+gradient()
+  background linear-gradient(103deg, $secondary 25%, $primary 85%)
+
+gradientDark()
+  background linear-gradient(90deg, #404259 5%, #524158 80%, #4D4158 100%)
+
+gradientLight()
+  background linear-gradient(90deg, $white 5%, #FCFCFC 60%, #FEFEFE 80%)
+  z-index -2
+
+gradientSecondary()
+  background linear-gradient(90deg, $secondary 30%, lighten($secondary, 15%) 100%);
+
+inputHover()
+  transform none
+  transition all .2s
+  &:focus,
+  &:hover
+    box-shadow 0px 6px 6px rgba(0, 0, 0, 0.2)
+    transform translate3d(-2px, -2px, 0)
+  &:active
+    box-shadow 0px 2px 2px rgba(0, 0, 0, 0.3)
+    transform none
+
+backgroundBlock()
+  boxShadow()
+  height 100%
+  left -100%
+  position absolute
+  top 0
+  transform rotate3d(0, 0, 1, -7.5deg)
+  width 300%
+  z-index -1
+
+media600() {
+  @media (min-width: 600px) {
+    {block}
+  }
+}
+
+media768() {
+  @media (min-width: 768px) {
+    {block}
+  }
+}
+
+media1024() {
+  @media (min-width: 1024px) {
+    {block}
+  }
+}
+
+media1200() {
+  @media (min-width: 1200px) {
+    {block}
+  }
+}
+
+media1600() {
+  @media (min-width: 1600px) {
+    {block}
+  }
+}
+
+media1920() {
+  @media (min-width: 1920px) {
+    {block}
+  }
+}
+
+mediaHeight600() {
+  @media (max-height: 600px) {
+    {block}
+  }
+}
+
+mediaLandscape() {
+  @media (orientation: landscape) and (max-height: 480px) {
+    {block}
+  }
+}

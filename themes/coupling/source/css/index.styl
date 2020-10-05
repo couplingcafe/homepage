@@ -1,0 +1,28 @@
+@import 'settings';
+
+html
+  background $white
+
+html,
+body
+  color $text
+  margin 0
+  overflow-x hidden
+  padding 0
+  position relative
+
+body
+  font-family 'Raleway', sans-serif
+  overflow hidden
+  &.loaded
+    opacity 1 !important
+
+a
+  color $primary
+  text-decoration none
+  transition all .2s
+  &:hover:not(.button)
+    color lighten($primary, 20%)
+
+h1, h2, h3
+  font-family 'Knicknack Fuzzy', sans-serif

@@ -1,0 +1,45 @@
+{
+  "name": "website",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "NODE_ENV=production hexo generate && NODE_ENV=production webpack",
+    "clean": "hexo clean",
+    "deploy": "npm run build && ghpages -p public -r git@github.com:learncoupling/learncoupling.github.io",
+    "start": "hexo generate --draft --watch & live-server --port=5000 --no-browser public & webpack --watch"
+  },
+  "description": "Website.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learncoupling/learncoupling.github.io.git"
+  },
+  "author": "Coupling",
+  "dependencies": {
+    "autoprefixer": "9.7.4",
+    "ghpages": "0.0.10",
+    "hexo": "^4.2.1",
+    "hexo-all-minifier": "^0.5.3",
+    "hexo-autoprefixer": "1.0.0",
+    "hexo-deployer-git": "0.3.0",
+    "hexo-generator-index": "0.2.0",
+    "hexo-prism-plugin": "2.1.2",
+    "hexo-renderer-marked": "github:pashokus/hexo-renderer-marked#0267532",
+    "hexo-renderer-nunjucks": "1.0.5",
+    "hexo-renderer-stylus": "0.3.1",
+    "hexo-server": "0.2.0",
+    "live-server": "^1.2.1",
+    "moment": "^2.27.0",
+    "node-fetch": "^2.6.0",
+    "stylus": "0.54.5",
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.10.3",
+    "xml2js": "^0.4.23"
+  },
+  "hexo": {
+    "version": "4.2.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  }
+}
