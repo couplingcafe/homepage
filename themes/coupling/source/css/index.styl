@@ -47,6 +47,7 @@ input[type="submit"]
   cursor pointer
   font-size 18px
   height 50px
+  max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
   transform none
@@ -71,6 +72,7 @@ input[type="text"]
   height 50px
   inputHover()
   margin-bottom 15px
+  max-width 768px
   text-align center 
   transition all .2s
   vertical-align middle
@@ -80,7 +82,11 @@ input[type="text"]
   width 100%
 
 .sectionInner
+  display flex
+  flex-wrap wrap
+  justify-content center
   padding 0 10px
+  width calc(100% - 20px)
 
 section.hero
   align-items center
@@ -92,12 +98,16 @@ section.hero
   width 100%
   text-align center
 
+  .sectionInner
+    align-items center
+    flex-direction column
+
   .header
     align-items center
     display flex
     justify-content center
 
-    .title
+    .wordmark
       color $yellow
       font-family 'Titan One'
       font-size 42px
@@ -108,23 +118,27 @@ section.hero
       text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
       text-transform uppercase
 
-   .logo 
-      max-width 80px 
+    .logo 
+      max-width 60px 
 
-  .heroText
-    h2
-      font-size 36px
-      margin-top 40px 
-      margin-bottom 15px 
-    p
-      margin-top 0
+  .title 
+    font-size 36px
+    margin-top 20px 
+    margin-bottom 15px 
+
+  .subtitle 
+    margin 0
+
+  .hero 
+    margin-bottom -20px
+    max-width 400px
 
 .subscribe
   align-items center
   display flex
   flex-direction column
   justify-content center
-  margin-top 50px
+  margin-top 40px
   width 100%
 
   input,
