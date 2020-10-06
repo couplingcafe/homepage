@@ -28,68 +28,74 @@
       <img src="/assets/img/us.jpg">
 
       <p>
-        I’m Kevin, and my wife is from China. I’ve been self-learning
-        Cantonese and Mandarin for years. It's funny I've been teaching myself
-        entirely on my own, while being married to a native speaker. I talked 
-        to a lot of bilingual couple friends and found it was a common
-        struggle learning each other's tongue.
+        <b>Learning a language today is a lonely process</b>: tap on gamified
+        apps, listen to headless voices, read textbooks, talk to strangers
+        online. It's hard to learn a language without interacting with people.
       </p>
 
       <p>
-        <b>Learning a language today is a lonely process</b>: tap on gamified apps,
-        listen to headless voices, talk to strangers online. It's hard to
-        learn a language without interacting with people. Many of us have a
-        native speaker around us all the time. Perhaps they're the reason why
-        we started learning. <b>I started Coupling to plug our loved ones into
-        our language journey and bring it life.</b>
+        Many of us have a native speaker around us all the time. Perhaps
+        they're the reason we started learning. <b>I started Coupling to
+        plug our loved ones into our language journey and bring it life.</b>
       </p>
     </div>
-
     {% include "./svg/wave.svg" %}
   </section>
 
-  <section class="product">
+  <section class="flashcard">
     <div class="sectionInner">
-      <h3>Learn a Language Together With Coupling</h3>
-
-      <p>Coupling makes it easy for your partner to guide you in learning their language</p>
+      <h3>Retain Every Word with Spaced Repetition Flashcards</h3>
 
       <div class="pourImage">
         <img src="/assets/img/pour.png">
       </div>
 
+      <p>
+        Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by medical students to memorize tens of thousands of terms
+      </p>
+
       <ul class="bulletPoints">
         <li>
-          <i class="fal fa-assistive-listening-systems"></i>
-          Play daily speaking and listening challenges together
-        </li>
-        <li>
           <i class="fal fa-address-card"></i>
-          Collect flashcards every time you learn something from your partner 
+          Generate flashcards every time you learn something from your partner 
         </li>
         <li>
-          <i class="fal fa-brain"></i>
-          Retain every word with the proven spaced repetition flashcard system
+          <i class="fal fa-bullseye-arrow"></i>
+          Hunt down tricky words and phrases you are struggling with 
         </li>
         <li>
-          <i class="fal fa-rabbit-fast"></i>
-          Generate flashcards quickly with autofilled translation and audio 
-        </li>
-        <li>
-          <i class="fal fa-comments"></i>
-          Ask for help with living comment threads on difficult flashcards
-        </li>
-        <li>
-          <i class="fal fa-video"></i>
-          Watch personalized language teaching video stories created by your partner
-        </li>
-        <li>
-          <i class="fal fa-battery-full"></i>
-          Stay motivated as your partner keeps track of your stats and progress
+          <i class="fal fa-map-marker-question"></i>
+          Get help in living comment threads on troublesome flashcards
         </li>
       </ul>
     </div>
+    {% include "./svg/wave.svg" %}
+  </section>
 
+  <section class="coach">
+    <div class="sectionInner">
+      <h3>Your Partner As Your Coach</h3>
+
+      <p>
+        Coupling makes it easy for your partner to guide you without having to
+        turn into a full-time language teacher
+      </p>
+
+      <ul class="bulletPoints">
+        <li>
+          <i class="fal fa-comments"></i>
+          Play daily speaking and listening challenges together
+        </li>
+        <li>
+          <i class="fal fa-video"></i>
+          Watch short personalized language videos created by your partner
+        </li>
+        <li>
+          <i class="fal fa-battery-full"></i>
+          Stay motivated as your partner keeps track of your progress
+        </li>
+      </ul>
+    </div>
     {% include "./svg/wave.svg" %}
   </section>
 
@@ -97,22 +103,20 @@
     <div class="sectionInner">
       <h3>Grow Closer Through Language</h3>
 
-      <p>
-        There are many rewarding benefits of learning your partner's or friend's language
-      </p>
+      <p>There are many awesome things about learning a loved one's language</p>
 
       <ul class="bulletPoints">
         <li>
           <i class="fal fa-heart"></i>
-          You grow closer together through understanding their language and culture
+          Grow closer together through understanding their language and culture
         </li>
         <li>
           <i class="fal fa-hand-holding-heart"></i>
-          You connect more deeply to them, their family, and their friends
+          Connect more deeply to them, their family, and their friends
         </li>
         <li>
           <i class="fal fa-laugh-beam"></i>
-          You can create more inside memes and jokes together
+          Create more inside memes and jokes together
         </li>
       </ul>
     </div>
