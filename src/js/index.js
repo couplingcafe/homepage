@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   initAnalytics();
   initLoaded();
   initSubscribeForm();
@@ -68,7 +69,7 @@ function initLoaded () {
 
   const img = document.querySelector('img.hero');
   if (!img.complete || img.naturalWidth === 0) {
-    img.onload = () => { 
+    img.onload = () => {
       imgLoaded = true;
       tryLoad();
     };
@@ -78,7 +79,7 @@ function initLoaded () {
   }
 
   function tryLoad () {
-    if (fontLoaded && imgLoaded) { 
+    if (fontLoaded && imgLoaded) {
       document.body.classList.add('loaded');
     }
   }

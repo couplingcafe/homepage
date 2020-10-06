@@ -29,12 +29,11 @@ ul
   li
     margin 10px 0
 
-p,
-li
+b, p, li
   font-size 20px
   line-height 34px
   +media768()
-    max-width 768px
+    max-width 800px
 
 a
   color $primary
@@ -63,7 +62,7 @@ input[type="submit"]
   color $text
   cursor pointer
   font-size 18px
-  height 50px
+  height 60px
   max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
@@ -83,7 +82,7 @@ input[type="text"]
   border-radius 5px
   boxShadow()
   color $text
-  font-family 'Raleway'
+  font-family 'Font Awesome 5 Pro', 'Raleway'
   font-size 18px
   height 50px
   inputHover()
@@ -103,8 +102,8 @@ ul.bulletPoints
     display flex
     i 
       color $white
-      font-size 28px
-      margin-right 20px
+      font-size 34px
+      margin-right 40px
       textShadow()
       width 30px
 
@@ -140,7 +139,7 @@ section
 section.hero
   gradient($purple, $purpleend)
   padding-top 40px
-  z-index 10
+  z-index 20
   wave($purpleend)
 
   .header
@@ -172,6 +171,7 @@ section.hero
     margin-bottom 15px 
 
   .subtitle 
+    font-size 26px
     margin 0
 
   .hero 
@@ -196,25 +196,10 @@ form.subscribe
   button
     font-weight bold
 
-section.language
-  gradient($yellow, $yellowend)
-  wave($yellowend)
-  z-index 9
-
-section.coach
-  gradient($blue, $blueend)
-  wave($blueend)
-  z-index 8 
-
-section.product
-  gradient($purple, $purpleend)
-  wave($purpleend)
-  z-index 7
-
 section.about
   gradient($yellow, $yellowend)
   wave($yellowend)
-  z-index 6
+  z-index 10 
 
   img
     border-radius 200px
@@ -223,9 +208,32 @@ section.about
     margin-bottom 20px
     width 200px 
 
-section.subscribe
+section.product
   gradient($blue, $blueend)
   wave($blueend)
+  z-index 7
+  p
+    margin-top 0
+  .pourImage
+    gradient($red, lighten($red, 20%))
+    border-radius 300px
+    boxShadow()
+    height 200px
+    margin 10px 0 20px 0
+    width 200px
+    img 
+      left 8px
+      position relative
+      max-width 200px
+
+section.language
+  gradient($purple, $purpleend)
+  wave($purpleend)
+  z-index 6
+
+section.subscribe
+  gradient($yellow, $yellowend)
+  wave($yellowend)
   z-index 5
 
   button
@@ -233,16 +241,23 @@ section.subscribe
 
 section.footer
   display flex
-  gradient($yellow, $yellowend)
+  background $red
   flex-direction row
   justify-content center
   padding 80px 0 40px 0
   width 100%
   z-index 0
 
-  a, i
+  a
     font-size 36px
     cursor pointer 
-    color $purple
-    margin 0 5px
+    color $white
+    margin 0 15px
     textShadow()
+  svg
+    fill $white 
+    height 40px
+    width 40px
+    transition fill .2s
+    &:hover
+      fill $blue

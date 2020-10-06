@@ -52,8 +52,8 @@
 {{ css('/css/index') }}
 <script src="/build.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet" rel="preload"> 
-<script src="https://kit.fontawesome.com/bb341dd622.js" crossorigin="anonymous" SameSite="None"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet" rel="preload">
+<link href="/assets/css/fontawesome.css" rel="stylesheet">
 
 <body data-type="{{ page.layout }}">
   {{ body }}
