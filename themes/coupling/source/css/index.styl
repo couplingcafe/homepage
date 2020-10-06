@@ -7,7 +7,7 @@ html
 html,
 body
   color $text
-  font-weight 500 
+  font-weight 500
   height 100%
   margin 0
   overflow-x hidden
@@ -32,7 +32,7 @@ ul
 b, p, li
   font-size 20px
   line-height 36px
-  +media1024()
+  +media1200()
     max-width 800px
     text-align justify
 
@@ -90,7 +90,7 @@ input[type="text"]
   inputHover()
   margin-bottom 15px
   max-width 768px
-  text-align center 
+  text-align center
   transition all .2s
   vertical-align middle
 
@@ -103,7 +103,7 @@ ul.bulletPoints
     align-items center
     display flex
     text-align left
-    i 
+    i
       color $white
       font-size 34px
       margin-right 40px
@@ -118,11 +118,11 @@ section
   align-items center
   display flex
   flex-direction column
-  position relative 
+  position relative
   padding-top 60px
   text-align center
   width 100%
-  +media1024()
+  +media1200()
     &:not(.hero)
       padding-bottom 20px
 
@@ -135,7 +135,7 @@ section
   padding 0 20px
   width calc(100% - 40px)
   h3 + p
-    margin-top 5px 
+    margin-top 5px
   > p
     text-align justify
 
@@ -144,7 +144,7 @@ section
   position absolute
   transform scaleX(5) translateY(35px)
   height 40px
-  +media1024()
+  +media768()
     height 50px
     transform scaleX(10) translateY(45px)
 
@@ -152,12 +152,12 @@ section.hero
   sectionPurple()
   padding-top 20px
   z-index 20
-  +media1024()
+  +media1200()
     padding-top 40px
 
   .sectionInner
     padding-bottom 20px
-    +media1024()
+    +media1200()
       flex-direction row
       flex-wrap nowrap
       padding-left 30px
@@ -167,7 +167,7 @@ section.hero
       width calc(100% - 60px)
 
   .heroLeft
-    +media1024()
+    +media1200()
       margin-right 50px
     +media1200()
       margin-right 100px
@@ -187,58 +187,57 @@ section.hero
       margin-top 0
       text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
       text-transform uppercas3
-      +media1024()
+      +media1200()
         font-size 60px
         margin-right 30px
 
-    .logo 
-      max-width 60px 
-      +media1024()
+    .logo
+      max-width 60px
+      +media1200()
         max-width 100px
-        width 100px 
-
-  .heroImgDesktop
-    display none
-    margin-left -50px
-    margin-right -50px
-    +media1024()
-      display inline-block 
-
-  .heroImgMobile
-    display inline-block 
-    margin-bottom -50px
-    +media1024()
-      display none
+        width 100px
 
   img.hero
-    min-height 200px
+    height 500px
+    max-width 100%
 
-  .title 
+    +media1200()
+      margin-bottom -40px
+      height 600px
+
+    &.heroImgDesktop
+      display none
+      margin-left -50px
+      margin-right -50px
+      +media1200()
+        display inline-block
+
+    &.heroImgMobile
+      display inline-block
+      margin-bottom -50px
+      +media1200()
+        display none
+
+  .title
     color $white
     font-size 36px
-    margin-top 20px 
-    margin-bottom 15px 
-    +media1024()
+    margin-top 20px
+    margin-bottom 15px
+    +media1200()
       font-size 45px
       margin-top 50px
 
-  .subtitle 
+  .subtitle
     font-size 22px
     margin 0
     max-width 100%
     text-align center
-    +media1024()
+    +media1200()
       font-size 26px
       margin 10px 0 20px 0
 
-  .hero 
-    max-width 100% 
-    +media1024()
-      margin-bottom -40px
-      max-width 600px 
-
   form.subscribe
-    +media1024()
+    +media1200()
       align-items center
       flex-direction row
       flex-wrap nowrap
@@ -257,7 +256,7 @@ form.subscribe
   width 100%
 
   input,
-  button 
+  button
     width 100%
 
   button
@@ -266,14 +265,14 @@ form.subscribe
 section.about
   gradient($yellow, $yellowend)
   wave($yellowend)
-  z-index 10 
+  z-index 10
 
   img
     border-radius 200px
     boxShadow()
-    height 200px 
+    height 200px
     margin-bottom 20px
-    width 200px 
+    width 200px
 
 section.flashcard
   sectionBlue()
@@ -285,7 +284,7 @@ section.flashcard
     height 150px
     margin 10px 0 20px 0
     width 150px
-    img 
+    img
       left 8px
       position relative
       max-width 150px
@@ -316,12 +315,12 @@ section.footer
 
   a
     font-size 36px
-    cursor pointer 
+    cursor pointer
     color $white
     margin 0 15px
     textShadow()
   svg
-    fill $white 
+    fill $white
     height 40px
     width 40px
     transition fill .2s
