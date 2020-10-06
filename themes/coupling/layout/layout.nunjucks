@@ -15,6 +15,8 @@
 <meta name="twitter:card" content="summary">
 <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
 
+<noscript><style>body{opacity: 1 !important;}</style></noscript>
+
 <script type="text/javascript">
   (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
     ;r.type="text/javascript"
@@ -50,19 +52,9 @@
 {{ css('/css/index') }}
 <script src="/build.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet" rel="preload"> 
 <script src="https://kit.fontawesome.com/bb341dd622.js" crossorigin="anonymous" SameSite="None"></script>
 
 <body data-type="{{ page.layout }}">
   {{ body }}
-
-  <section class="footerSection">
-    <a href="https://twitter.com/learncoupling" data-twitter-track>
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://facebook.com/learncoupling" data-fb-track>
-      <i class="fab fa-facebook"></i>
-    </a>
-  </section>
 </body>

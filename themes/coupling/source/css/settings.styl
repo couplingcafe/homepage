@@ -17,24 +17,25 @@ $tertiary=$yellow
 $text=$black
 $shadow=rgba(0, 0, 0, 0.25)
 
+$blueend=#A8E3FF
+$purpleend=#E2CFF7
+$yellowend=#FFEDBD
+
 boxShadow()
   box-shadow 0px 2px 2px $shadow 
 
 boxShadowFocus()
   box-shadow 0px 0 0 2px $primary
 
-gradient()
-  background linear-gradient(103deg, $secondary 25%, $primary 85%)
+gradient($start, $end)
+  background radial-gradient(50% 50% at 50% 50%, $start 0%, $end 100%)
 
-gradientDark()
-  background linear-gradient(90deg, #404259 5%, #524158 80%, #4D4158 100%)
+wave($color)
+  .wave path 
+    fill $color 
 
-gradientLight()
-  background linear-gradient(90deg, $white 5%, #FCFCFC 60%, #FEFEFE 80%)
-  z-index -2
-
-gradientSecondary()
-  background linear-gradient(90deg, $secondary 30%, lighten($secondary, 15%) 100%);
+textShadow()
+  text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
 
 inputHover()
   transform none

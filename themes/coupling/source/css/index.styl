@@ -1,12 +1,13 @@
 @import 'settings';
 
 html
-  background $white
+  background $purple
   padding 0
 
 html,
 body
   color $text
+  font-weight 500 
   height 100%
   margin 0
   overflow-x hidden
@@ -15,14 +16,25 @@ body
 
 body
   font-family 'Raleway', sans-serif
-  overflow hidden
+  opacity 0
   padding 0
+  transition opacity 0.25s
   &.loaded
     opacity 1 !important
 
-p
-  font-size 24px
-  line-height 38px
+ul
+  list-style none
+  padding 0
+
+  li
+    margin 10px 0
+
+p,
+li
+  font-size 20px
+  line-height 34px
+  +media768()
+    max-width 768px
 
 a
   color $primary
@@ -33,7 +45,12 @@ a
 
 h1, h2, h3
   color #3A303A
-  font-family 'Knicknack', sans-serif
+  font-family 'Fredoka One', sans-serif
+  textShadow()
+
+h3
+  font-size 28px
+  line-height 34px
 
 button,
 .button,
@@ -53,7 +70,6 @@ input[type="submit"]
   transform none
   vertical-align middle
   &[disabled]
-    background #666
     pointer-events none
   &:hover
     background lighten($blue, 20%)
@@ -77,30 +93,45 @@ input[type="text"]
   transition all .2s
   vertical-align middle
 
+ul.bulletPoints
+  align-items flex-start
+  display flex
+  flex-direction column
+
 #container
   height 100%
   width 100%
 
-.sectionInner
+section
+  align-items center
   display flex
+  flex-direction column
+  position relative 
+  padding-bottom 20px
+  padding-top 60px
+  text-align center
+  width 100%
+
+.sectionInner
+  align-items center
+  display flex
+  flex-direction column
   flex-wrap wrap
   justify-content center
   padding 0 10px
   width calc(100% - 20px)
 
-section.hero
-  align-items center
-  background $purple
-  display flex
-  flex-direction column
-  padding-top 40px
-  height 100%
-  width 100%
-  text-align center
+.wave
+  bottom 0
+  position absolute
+  transform scaleX(10) translateY(45px)
+  height 50px
 
-  .sectionInner
-    align-items center
-    flex-direction column
+section.hero
+  gradient($purple, $purpleend)
+  padding-top 40px
+  z-index 10
+  wave($purpleend)
 
   .header
     align-items center
@@ -121,7 +152,11 @@ section.hero
     .logo 
       max-width 60px 
 
+  img.hero
+    min-height 200px
+
   .title 
+    color $white
     font-size 36px
     margin-top 20px 
     margin-bottom 15px 
@@ -131,9 +166,12 @@ section.hero
 
   .hero 
     margin-bottom -20px
-    max-width 400px
+    max-width 100% 
+    +media768()
+      margin-bottom -40px
+      max-width 600px 
 
-.subscribe
+form.subscribe
   align-items center
   display flex
   flex-direction column
@@ -147,3 +185,46 @@ section.hero
 
   button
     font-weight bold
+
+section.language
+  gradient($yellow, $yellowend)
+  wave($yellowend)
+  z-index 9
+
+section.coach
+  gradient($blue, $blueend)
+  wave($blueend)
+  z-index 8 
+
+section.product
+  gradient($purple, $purpleend)
+  wave($purpleend)
+  z-index 7
+
+section.about
+  gradient($yellow, $yellowend)
+  wave($yellowend)
+  z-index 6
+
+section.subscribe
+  gradient($blue, $blueend)
+  wave($blueend)
+  z-index 5
+
+  button
+    background $purple 
+
+section.footer
+  display flex
+  gradient($yellow, $yellowend)
+  flex-direction row
+  justify-content center
+  padding 80px 0 40px 0
+  width 100%
+  z-index 0
+
+  a, i
+    font-size 36px
+    cursor pointer 
+    color $red
+    margin 0 5px

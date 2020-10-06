@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('loaded');
   initAnalytics();
-  // initABTest();
+  initLoaded();
   initSubscribeForm();
   initViewportAnimations();
 });
@@ -20,6 +19,8 @@ function initABTest () {
 }
 
 function initAnalytics () {
+  if (window.location.host.startsWith('localhost')) { return; }
+
   amp().logEvent('Page View', {
     page: document.body.dataset.type || document.title
   });
@@ -56,65 +57,84 @@ function initAnalytics () {
   }
 }
 
+function initLoaded () {
+  let fontLoaded = false;
+  let imgLoaded = false;
+
+  document.fonts.ready.then(() => {
+    fontLoaded = true;
+    tryLoad();
+  });
+
+  const img = document.querySelector('img.hero');
+  if (!img.complete || img.naturalWidth === 0) {
+    img.onload = () => { 
+      imgLoaded = true;
+      tryLoad();
+    };
+  } else {
+    imgLoaded = true;
+    tryLoad();
+  }
+
+  function tryLoad () {
+    if (fontLoaded && imgLoaded) { 
+      document.body.classList.add('loaded');
+    }
+  }
+}
+
 /**
  * Init XHR handler to subscribe.
  */
 function initSubscribeForm () {
-  const form = $('form.subscribe');
-  if (!form) { return; }
+  const forms = $$('form.subscribe');
+  if (!forms || !forms.length) { return; }
 
-  const button = form.querySelector('.submit');
-  const input = form.querySelector('input[type="email"]');
-  const newsletterHeader = $('#newsletterForm > h2');
+  forms.forEach(form => {
+    const button = form.querySelector('.submit');
+    const input = form.querySelector('input[type="email"]');
 
-  let originalHeaderText = '';
-  if (newsletterHeader) {
-    originalHeaderText = newsletterHeader.innerHTML;
-  }
+    let originalHeaderText = '';
 
-  form.addEventListener('submit', evt => {
-    evt.preventDefault();
+    form.addEventListener('submit', evt => {
+      evt.preventDefault();
 
-    const xhr = new XMLHttpRequest();
-    let endpoint = 'http://localhost:5000/mail/subscribe';
-    if (process.env.NODE_ENV === 'production') {
-      endpoint = 'https://api.learncoupling.com/mail/subscribe';
+      const xhr = new XMLHttpRequest();
+      let endpoint = 'http://localhost:5000/mail/subscribe';
+      if (process.env.NODE_ENV === 'production') {
+        endpoint = 'https://api.learncoupling.com/mail/subscribe';
+      }
+      xhr.open('POST', endpoint);
+
+      xhr.addEventListener('load', () => {
+        if (parseInt(xhr.status, 10) !== 200) {
+          window.location.href = 'https://learncoupling.com/subscribe';
+        }
+        if (button) {
+          button.disabled = true;
+          button.innerHTML = 'Subscribed!';
+        }
+      });
+
+      xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+      xhr.send(JSON.stringify({
+        email: $('[name="email"]').value,
+        source: document.title
+      }));
+
+      return false;
+    });
+
+    if (button) {
+      input.addEventListener('keydown', () => {
+        if (button.hasAttribute('disabled')) {
+          button.innerHTML = 'Subscribe';
+          button.removeAttribute('disabled');
+        }
+      });
     }
-    xhr.open('POST', endpoint);
-
-    xhr.addEventListener('load', () => {
-      if (parseInt(xhr.status, 10) !== 200) {
-        window.location.href = 'https://learncoupling.com/subscribe';
-      }
-      if (button) {
-        button.disabled = true;
-        button.innerHTML = 'Subscribed!';
-      }
-      if (newsletterHeader) {
-        newsletterHeader.innerHTML = 'Successfully subscribed, thank you!';
-      }
-    });
-
-    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-    xhr.send(JSON.stringify({
-      email: $('[name="email"]').value,
-      source: document.title
-    }));
-
-    return false;
   });
-
-  if (button) {
-    input.addEventListener('keydown', () => {
-      if (button.hasAttribute('disabled')) {
-        button.innerHTML = 'Subscribe';
-        button.removeAttribute('disabled');
-      }
-      if (newsletterHeader && originalHeaderText) {
-        newsletterHeader.innerHTML = originalHeaderText;
-      }
-    });
-  }
 }
 
 function initViewportAnimations() {
@@ -156,6 +176,5 @@ function click (q, fn) {
 }
 
 function amp () { return amplitude.getInstance(); }
-
 function $ (q) { return document.querySelector(q); }
-function $$ (q) { return document.querySelectorAll(q); }
+function $$ (q) { return Array.from(document.querySelectorAll(q)); }

@@ -1,9 +1,10 @@
 <div id="container">
+
   <section class="hero">
     <div class="sectionInner">
       <div class="header">
         <h1 class="wordmark">Coupling</h1>
-        <img class="logo" src="/assets/img/logo.png">
+        <img class="logo" src="/assets/img/logo.svg">
       </div>
 
       <h2 class="title">Learn Your Loved One's Language</h2>
@@ -17,5 +18,91 @@
         <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
       </form>
     </div>
+    {% include "./wave.svg" %}
+  </section>
+
+  <section class="language">
+    <div class="sectionInner">
+      <h3>Grow Closer Through Language</h3>
+
+      <img src="/assets/img/logo.svg">
+
+      <p>
+        There are many rewarding benefits of learning your partner's or friend's language
+      </p>
+
+      <ul class="bulletPoints">
+        <li>♡  Grow closer together through understanding language and culture</li>
+        <li>♡  Connect more deeply to them, their family, and their friends</li>
+        <li>♡  Spend time creating inside memes together!</li>
+      </ul>
+    </div>
+    {% include "./wave.svg" %}
+  </section>
+
+  <section class="product">
+    <div class="sectionInner">
+      <h3>Learn a Language Together With Coupling</h3>
+
+      <img src="/assets/img/logo.svg">
+
+      <p>
+        Coupling makes it easy for your partner to guide you in learning their language
+      </p>
+
+      <ul class="bulletPoints">
+        <li>♡ Collect flashcards from all over including your conversations</li>
+        <li>♡ Retain every word with the proven spaced repetition flashcard method</li>
+        <li>♡ Build a living comment thread on flashcards you have trouble remembering</li>
+        <li>♡ Share personal TikTok-style language learning videos</li>
+        <li>♡ Play daily challenges and games together to improve speaking and listening</li>
+      </ul>
+    </div>
+
+    {% include "./wave.svg" %}
+  </section>
+
+  <section class="about">
+    <div class="sectionInner">
+      <h3>About Me</h3>
+
+      <p>
+        I’m Kevin, a Vietnamese-American. My wife is from China. I’ve been
+        learning Cantonese and Mandarin for years through self-study using
+        podcasts and Anki. 
+      </p>
+
+      <p>
+        I wanted to involve her in my language learning beyond me asking “how
+        do you say this?”. I started Coupling for myself and after discovering
+        many couples had issues learning their partner's language.
+      </p>
+    </div>
+
+    {% include "./wave.svg" %}
+  </section>
+
+  <section class="subscribe">
+    <div class="sectionInner">
+      <h3>Try Coupling for Free!</h3>
+      <img src="/assets/img/logo.svg">
+      <form class="subscribe">
+        <input name="email" type="email" placeholder="Your email..." required>
+        <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
+      </form>
+    </div>
+    {% include "./wave.svg" %}
+  </section>
+
+  <section class="footer">
+    <a href="https://twitter.com/learncoupling" data-twitter-track>
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://facebook.com/learncoupling" data-fb-track>
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com/learncoupling" data-instagram-track>
+      <i class="fab fa-instagram"></i>
+    </a>
   </section>
 </div>
