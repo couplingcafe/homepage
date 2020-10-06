@@ -25,7 +25,7 @@
     {% include "./svg/wave.svg" %}
   </section>
 
-  <section class="about">
+  <section class="problem">
     <div class="sectionInner">
       <h3>A Language App That Works</h3>
 
@@ -135,6 +135,37 @@
         <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
         <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
       </form>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="about">
+    <div class="sectionInner">
+      <h3>About Me</h3>
+
+      <img src="/assets/img/me.jpg">
+
+      <p>
+        Hey! I’m <a href="https://twitter.com/andgokevin">Kevin</a>, and my
+        wife Heidi is from China. I’ve been self-learning Cantonese and
+        Mandarin for years. I also speak Vietnamese and some Spanish. I
+        started Coupling to help myself and other couples who have tried to
+        learn each other's languages. Eventually, I hope this brings the world
+        a little bit closer in understanding each other.
+      </p>
+
+      <p>
+        I'm a developer and designer. Before I led the <a
+        href="https://aframe.io">A-Frame community</a>, teaching tens of
+        thousands of people to build 3D worlds. In 2018, I founded <a href="https://supermedium.com">a VR
+        startup</a> that went through <a href="https://www.ycombinator.com">Y Combinator</a> and raised $1.2M. I took a
+        giant leap to tackle language learning. Now I am working 24/7 on
+        Coupling and am funding it out of my own pocket.
+      </p>
+
+      <p>
+        Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a> 
+      </p>
     </div>
     {% include "./svg/wave.svg" %}
   </section>

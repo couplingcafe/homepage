@@ -19,6 +19,7 @@ $shadow=rgba(0, 0, 0, 0.25)
 
 $blueend=#A8E3FF
 $purpleend=#E2CFF7
+$redend=lighten($red, 10%)
 $yellowend=#FFEDBD
 
 boxShadow()
@@ -41,6 +42,10 @@ sectionBlue()
 sectionPurple()
   gradient($purple, $purpleend)
   wave($purpleend)
+
+sectionRed()
+  gradient($red, $redend)
+  wave($redend)
 
 sectionYellow()
   gradient($yellow, $yellowend)

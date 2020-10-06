@@ -37,12 +37,14 @@ b, p, li
     text-align justify
 
 a
-  color $white
+  color $text
+  font-weight bold
   text-decoration none
+  font-weight bold
   textShadow()
   transition all .2s
   &:hover:not(.button)
-    color lighten($white, 20%)
+    text-decoration underline 
 
 h1, h2, h3
   color #3A303A
@@ -262,9 +264,8 @@ form.subscribe
   button
     font-weight bold
 
-section.about
-  gradient($yellow, $yellowend)
-  wave($yellowend)
+section.problem
+  sectionYellow()
   z-index 10
 
   img
@@ -303,6 +304,22 @@ section.subscribe
   z-index 2
   button
     background $purple
+
+section.about
+  sectionYellow()
+  z-index 1
+  img
+    border-radius 200px
+    height 200px
+    width 200px
+    margin-bottom 20px
+    boxShadow()
+  a 
+    color $black 
+    font-weight bold
+    &:hover
+      color $black
+      text-decoration underline
 
 section.footer
   display flex
