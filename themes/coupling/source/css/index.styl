@@ -97,6 +97,16 @@ ul.bulletPoints
   align-items flex-start
   display flex
   flex-direction column
+  margin-top 0
+  li
+    align-items center
+    display flex
+    i 
+      color $white
+      font-size 28px
+      margin-right 20px
+      textShadow()
+      width 30px
 
 #container
   height 100%
@@ -206,6 +216,13 @@ section.about
   wave($yellowend)
   z-index 6
 
+  img
+    border-radius 200px
+    boxShadow()
+    height 200px 
+    margin-bottom 20px
+    width 200px 
+
 section.subscribe
   gradient($blue, $blueend)
   wave($blueend)
@@ -226,5 +243,6 @@ section.footer
   a, i
     font-size 36px
     cursor pointer 
-    color $red
+    color $purple
     margin 0 5px
+    textShadow()

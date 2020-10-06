@@ -32,9 +32,18 @@
       </p>
 
       <ul class="bulletPoints">
-        <li>♡  Grow closer together through understanding language and culture</li>
-        <li>♡  Connect more deeply to them, their family, and their friends</li>
-        <li>♡  Spend time creating inside memes together!</li>
+        <li>
+          <i class="far fa-heart"></i>
+          You grow closer together through understanding their language and culture
+        </li>
+        <li>
+          <i class="fas fa-hand-holding-heart"></i>
+          You connect more deeply to them, their family, and their friends
+        </li>
+        <li>
+          <i class="far fa-laugh-beam"></i>
+          You can create more inside memes and jokes together
+        </li>
       </ul>
     </div>
     {% include "./wave.svg" %}
@@ -51,11 +60,26 @@
       </p>
 
       <ul class="bulletPoints">
-        <li>♡ Collect flashcards from all over including your conversations</li>
-        <li>♡ Retain every word with the proven spaced repetition flashcard method</li>
-        <li>♡ Build a living comment thread on flashcards you have trouble remembering</li>
-        <li>♡ Share personal TikTok-style language learning videos</li>
-        <li>♡ Play daily challenges and games together to improve speaking and listening</li>
+        <li>
+          <i class="far fa-address-card"></i>
+          Collect flashcards from all over including your conversations
+        </li>
+        <li>
+          <i class="fas fa-brain"></i>
+          Retain every word with the proven spaced repetition flashcard system
+        </li>
+        <li>
+          <i class="far fa-comments"></i>
+          Ask for help with living comment threads on difficult flashcards
+        </li>
+        <li>
+          <i class="fas fa-video"></i>
+          Share personal TikTok-style language learning videos
+        </li>
+        <li>
+          <i class="fas fa-assistive-listening-systems"></i>
+          Play daily speaking and listening challenges together
+        </li>
       </ul>
     </div>
 
@@ -66,16 +90,19 @@
     <div class="sectionInner">
       <h3>About Me</h3>
 
+      <img src="/assets/img/us.jpg">
+
       <p>
-        I’m Kevin, a Vietnamese-American. My wife is from China. I’ve been
-        learning Cantonese and Mandarin for years through self-study using
-        podcasts and Anki. 
+        I’m Kevin, a Vietnamese-American. My wife, Heidi, is from China. I’ve
+        been self-learning Cantonese and Mandarin for years using podcasts and
+        Anki.
       </p>
 
       <p>
-        I wanted to involve her in my language learning beyond me asking “how
-        do you say this?”. I started Coupling for myself and after discovering
-        many couples had issues learning their partner's language.
+        I wanted to involve Heidi better in my learning process beyond me
+        just asking “how do you say this?”. I started building Coupling for myself
+        and after discovering many couples had similar experiences trying to
+        learn their partner's language.
       </p>
     </div>
 
