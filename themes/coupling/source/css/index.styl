@@ -32,7 +32,7 @@ ul
 b, p, li
   font-size 20px
   line-height 36px
-  +media768()
+  +media1024()
     max-width 800px
     text-align justify
 
@@ -122,7 +122,7 @@ section
   padding-top 60px
   text-align center
   width 100%
-  +media768()
+  +media1024()
     &:not(.hero)
       padding-bottom 20px
 
@@ -144,7 +144,7 @@ section
   position absolute
   transform scaleX(5) translateY(35px)
   height 40px
-  +media768()
+  +media1024()
     height 50px
     transform scaleX(10) translateY(45px)
 
@@ -152,8 +152,25 @@ section.hero
   sectionPurple()
   padding-top 20px
   z-index 20
-  +media768()
+  +media1024()
     padding-top 40px
+
+  .sectionInner
+    padding-bottom 20px
+    +media1024()
+      flex-direction row
+      flex-wrap nowrap
+      padding-left 30px
+      padding-right 30px
+      padding-bottom 100px
+      padding-top 100px
+      width calc(100% - 60px)
+
+  .heroLeft
+    +media1024()
+      margin-right 50px
+    +media1200()
+      margin-right 100px
 
   .header
     align-items center
@@ -170,9 +187,28 @@ section.hero
       margin-top 0
       text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
       text-transform uppercas3
+      +media1024()
+        font-size 60px
+        margin-right 30px
 
     .logo 
       max-width 60px 
+      +media1024()
+        max-width 100px
+        width 100px 
+
+  .heroImgDesktop
+    display none
+    margin-left -50px
+    margin-right -50px
+    +media1024()
+      display inline-block 
+
+  .heroImgMobile
+    display inline-block 
+    margin-bottom -50px
+    +media1024()
+      display none
 
   img.hero
     min-height 200px
@@ -182,20 +218,34 @@ section.hero
     font-size 36px
     margin-top 20px 
     margin-bottom 15px 
+    +media1024()
+      font-size 45px
+      margin-top 50px
 
   .subtitle 
     font-size 22px
     margin 0
+    max-width 100%
     text-align center
-    +media768()
+    +media1024()
       font-size 26px
+      margin 10px 0 20px 0
 
   .hero 
-    margin-bottom -20px
-    max-width 100% 
-    +media768()
+    max-width 600px 
+    +media1024()
       margin-bottom -40px
-      max-width 600px 
+
+  form.subscribe
+    +media1024()
+      align-items center
+      flex-direction row
+      flex-wrap nowrap
+      input
+        margin 0 20px 0 0
+        width 60%
+      button
+        width 40%
 
 form.subscribe
   align-items center

@@ -2,21 +2,25 @@
 
   <section class="hero">
     <div class="sectionInner">
-      <div class="header">
-        <h1 class="wordmark">Coupling</h1>
-        <img class="logo" src="/assets/img/logo.svg">
+      <div class="heroLeft">
+        <div class="header">
+          <h1 class="wordmark">Coupling</h1>
+          <img class="logo" src="/assets/img/logo.svg">
+        </div>
+
+        <h2 class="title">Learn Your Loved One's Language</h2>
+
+        <img class="hero heroImgMobile" src="/assets/img/phones.png">
+
+        <p class="subtitle">Fun and rewarding language learning for couples</p>
+
+        <form class="subscribe">
+          <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
+          <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
+        </form>
       </div>
 
-      <h2 class="title">Learn Your Loved One's Language</h2>
-
-      <img class="hero" src="/assets/img/phones.png">
-
-      <p class="subtitle">Fun and rewarding language learning for couples</p>
-
-      <form class="subscribe">
-        <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
-        <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
-      </form>
+      <img class="hero heroImgDesktop" src="/assets/img/phones.png">
     </div>
     {% include "./svg/wave.svg" %}
   </section>
