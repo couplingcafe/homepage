@@ -49,12 +49,11 @@
   });
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet" rel="preload">
-
+{{ css('/css/index') }}
 <body data-type="{{ page.layout }}">
   {{ body }}
 
-  {{ css('/css/index') }}
-  <link href="/assets/css/fontawesome.css" rel="stylesheet">
   <script src="/build.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="/assets/css/fontawesome.css" rel="stylesheet">
 </body>
