@@ -27,7 +27,7 @@
 
   <section class="problem">
     <div class="sectionInner">
-      <h3>A Language App That Works</h3>
+      <h3>A More Social Language App</h3>
 
       <div class="sectionInnerColumns">
         <img src="/assets/img/us.jpg">
@@ -59,21 +59,21 @@
 
         <div>
           <p>
-            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by medical students to memorize tens of thousands of terms
+            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by polyglots and medical students to memorize tens of thousands of terms
           </p>
 
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-address-card"></i>
-              Generate flashcards every time you learn something from your partner 
+              Generate new flashcards from conversations and challenges 
             </li>
             <li>
               <i class="fal fa-bullseye-arrow"></i>
               Hunt down tricky words and phrases you are struggling with 
             </li>
             <li>
-              <i class="fal fa-map-marker-question"></i>
-              Get help in living comment threads on troublesome flashcards
+              <i class="fal fa-battery-full"></i>
+              Stay motivated as your partner keeps track of your progress
             </li>
           </ul>
         </div>
@@ -91,22 +91,22 @@
 
         <div>
           <p>
-            Coupling makes it easy for your partner to guide you without having to
-            turn into a full-time language teacher
+            Coupling makes it seamless for your partner to guide you without
+            having to turn into an on-demand language teacher
           </p>
 
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-comments"></i>
-              Play daily speaking and listening challenges together
+              Play short daily speaking and listening challenges together
             </li>
             <li>
               <i class="fal fa-video"></i>
-              Watch short personalized language videos created by your partner
+              Watch mini language lesson videos created by your partner 
             </li>
             <li>
-              <i class="fal fa-battery-full"></i>
-              Stay motivated as your partner keeps track of your progress
+              <i class="fal fa-map-marker-question"></i>
+              Get help from your partner in comment threads on hard flashcards
             </li>
           </ul>
         </div>
