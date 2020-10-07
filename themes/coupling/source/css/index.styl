@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'settings'
 
 html
   background $purple
@@ -141,6 +141,31 @@ section
   > p
     text-align justify
 
+  .sectionInnerColumns
+    align-items center
+    display flex 
+    flex-direction column 
+    img
+      max-width 200px  
+    > div
+      align-items center 
+      display flex
+      flex-direction column
+    +media1200()
+      align-items center
+      display flex 
+      flex-direction row
+      justify-content center
+      flex-wrap nowrap
+      > :first-child
+        margin-right 50px
+      &.reverse
+        flex-direction row-reverse
+        > :first-child
+          margin-right 0
+        > :last-child
+          margin-right 50px
+
 .wave
   bottom 0
   position absolute
@@ -213,6 +238,9 @@ section.hero
     &.heroImgMobile
       display inline-block
       margin-bottom -20px
+      margin-top 20px
+      max-width 500px
+      transform scale(1.1)
       width 100%
       +media1200()
         display none
@@ -300,6 +328,9 @@ section.subscribe
       left 8px
       position relative
       max-width 150px
+  +media1200()
+    form.subscribe
+      margin 0
 
 section.about
   sectionYellow()

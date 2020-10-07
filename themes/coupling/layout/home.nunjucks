@@ -29,19 +29,23 @@
     <div class="sectionInner">
       <h3>A Language App That Works</h3>
 
-      <img src="/assets/img/us.jpg">
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/us.jpg">
 
-      <p>
-        <b>Learning a language today is a lonely process</b>: tap on gamified
-        apps, listen to headless voices, read textbooks, talk to strangers
-        online. It's hard to learn a language without interacting with people.
-      </p>
+        <div>
+          <p>
+            <b>Learning a language today is a lonely process</b>: tap on gamified
+            apps, listen to headless voices, read textbooks, talk to strangers
+            online. It's hard to learn a language without interacting with people.
+          </p>
 
-      <p>
-        Many of us have a native speaker around us all the time. Perhaps
-        they're the reason we started learning. <b>I started Coupling to
-        plug our loved ones into our language journey and bring it life.</b>
-      </p>
+          <p>
+            Many of us have a native speaker around us all the time. Perhaps
+            they're the reason we started learning. <b>I started Coupling to
+            plug our loved ones into our language journey and bring it life.</b>
+          </p>
+        </div>
+      </div>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -50,24 +54,30 @@
     <div class="sectionInner">
       <h3>Retain Every Word with Spaced Repetition Flashcards</h3>
 
-      <p>
-        Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by medical students to memorize tens of thousands of terms
-      </p>
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/library.png">
 
-      <ul class="bulletPoints">
-        <li>
-          <i class="fal fa-address-card"></i>
-          Generate flashcards every time you learn something from your partner 
-        </li>
-        <li>
-          <i class="fal fa-bullseye-arrow"></i>
-          Hunt down tricky words and phrases you are struggling with 
-        </li>
-        <li>
-          <i class="fal fa-map-marker-question"></i>
-          Get help in living comment threads on troublesome flashcards
-        </li>
-      </ul>
+        <div>
+          <p>
+            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by medical students to memorize tens of thousands of terms
+          </p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-address-card"></i>
+              Generate flashcards every time you learn something from your partner 
+            </li>
+            <li>
+              <i class="fal fa-bullseye-arrow"></i>
+              Hunt down tricky words and phrases you are struggling with 
+            </li>
+            <li>
+              <i class="fal fa-map-marker-question"></i>
+              Get help in living comment threads on troublesome flashcards
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -76,25 +86,31 @@
     <div class="sectionInner">
       <h3>Your Partner As Your Coach</h3>
 
-      <p>
-        Coupling makes it easy for your partner to guide you without having to
-        turn into a full-time language teacher
-      </p>
+      <div class="sectionInnerColumns reverse">
+        <img src="/assets/img/challenges.png">
 
-      <ul class="bulletPoints">
-        <li>
-          <i class="fal fa-comments"></i>
-          Play daily speaking and listening challenges together
-        </li>
-        <li>
-          <i class="fal fa-video"></i>
-          Watch short personalized language videos created by your partner
-        </li>
-        <li>
-          <i class="fal fa-battery-full"></i>
-          Stay motivated as your partner keeps track of your progress
-        </li>
-      </ul>
+        <div>
+          <p>
+            Coupling makes it easy for your partner to guide you without having to
+            turn into a full-time language teacher
+          </p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-comments"></i>
+              Play daily speaking and listening challenges together
+            </li>
+            <li>
+              <i class="fal fa-video"></i>
+              Watch short personalized language videos created by your partner
+            </li>
+            <li>
+              <i class="fal fa-battery-full"></i>
+              Stay motivated as your partner keeps track of your progress
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -127,14 +143,16 @@
     <div class="sectionInner">
       <h3>Try Coupling for Free!</h3>
 
-      <div class="pourImage">
-        <img src="/assets/img/pour.png">
-      </div>
+      <div class="sectionInnerColumns">
+        <div class="pourImage">
+          <img src="/assets/img/pour.png">
+        </div>
 
-      <form class="subscribe">
-        <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
-        <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
-      </form>
+        <form class="subscribe">
+          <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
+          <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
+        </form>
+      </div>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
