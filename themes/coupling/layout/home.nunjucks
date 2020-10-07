@@ -50,10 +50,6 @@
     <div class="sectionInner">
       <h3>Retain Every Word with Spaced Repetition Flashcards</h3>
 
-      <div class="pourImage">
-        <img src="/assets/img/pour.png">
-      </div>
-
       <p>
         Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by medical students to memorize tens of thousands of terms
       </p>
@@ -130,7 +126,11 @@
   <section class="subscribe">
     <div class="sectionInner">
       <h3>Try Coupling for Free!</h3>
-      <img src="/assets/img/logo.svg">
+
+      <div class="pourImage">
+        <img src="/assets/img/pour.png">
+      </div>
+
       <form class="subscribe">
         <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
         <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
@@ -163,7 +163,7 @@
         Coupling and am funding it out of my own pocket.
       </p>
 
-      <p>
+      <p style="text-align: center">
         Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a> 
       </p>
     </div>

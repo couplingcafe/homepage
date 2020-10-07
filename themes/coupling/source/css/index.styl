@@ -200,23 +200,20 @@ section.hero
         width 100px
 
   img.hero
-    height 500px
-    max-width 100%
-
-    +media1200()
-      margin-bottom -40px
-      height 600px
-
     &.heroImgDesktop
       display none
+      height 600px
+      max-width 100%
       margin-left -50px
       margin-right -50px
+      margin-bottom -40px
       +media1200()
         display inline-block
 
     &.heroImgMobile
       display inline-block
-      margin-bottom -50px
+      margin-bottom -20px
+      width 100%
       +media1200()
         display none
 
@@ -278,17 +275,6 @@ section.problem
 section.flashcard
   sectionBlue()
   z-index 5
-  .pourImage
-    gradient($red, lighten($red, 20%))
-    border-radius 300px
-    boxShadow()
-    height 150px
-    margin 10px 0 20px 0
-    width 150px
-    img
-      left 8px
-      position relative
-      max-width 150px
 
 section.coach
   sectionPurple()
@@ -304,6 +290,16 @@ section.subscribe
   z-index 2
   button
     background $purple
+  .pourImage
+    gradient($red, lighten($red, 20%))
+    border-radius 300px
+    boxShadow()
+    height 150px
+    width 150px
+    img
+      left 8px
+      position relative
+      max-width 150px
 
 section.about
   sectionYellow()
