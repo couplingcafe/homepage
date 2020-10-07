@@ -119,22 +119,28 @@
     <div class="sectionInner">
       <h3>Grow Closer Through Language</h3>
 
-      <p>There are many awesome things about learning a loved one's language</p>
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/messenger.png">
 
-      <ul class="bulletPoints">
-        <li>
-          <i class="fal fa-heart"></i>
-          Grow closer together through understanding their language and culture
-        </li>
-        <li>
-          <i class="fal fa-hand-holding-heart"></i>
-          Connect more deeply to them, their family, and their friends
-        </li>
-        <li>
-          <i class="fal fa-laugh-beam"></i>
-          Create inside memes and jokes together
-        </li>
-      </ul>
+        <div>
+          <p>There are many awesome things about learning a loved one's language</p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-heart"></i>
+              Grow closer together through understanding their language and culture
+            </li>
+            <li>
+              <i class="fal fa-hand-holding-heart"></i>
+              Connect more deeply to them, their family, and their friends
+            </li>
+            <li>
+              <i class="fal fa-laugh-beam"></i>
+              Create inside memes and jokes together
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
