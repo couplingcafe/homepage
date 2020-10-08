@@ -1,5 +1,4 @@
 <div id="container">
-
   <section class="hero">
     <div class="sectionInner">
       <div class="heroLeft">
@@ -46,6 +45,8 @@
           </p>
         </div>
       </div>
+
+      <p><b><a href="https://coupling.substack.com/p/introducing-coupling">Read more about Coupling&hellip;</a></b></p>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -158,6 +159,8 @@
           <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
         </form>
       </div>
+
+      <p>And read updates on our <b><a href="https://coupling.substack.com">blog</a></b>!</p>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
