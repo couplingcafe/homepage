@@ -49,7 +49,8 @@
   });
 </script>
 
-{{ css('/css/index') }}
+<link rel="stylesheet" href="/css/index.css?v=2">
+
 <body data-type="{{ page.layout }}">
   {{ body }}
 

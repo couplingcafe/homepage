@@ -24,7 +24,7 @@
         </a>
       </div>
 
-      <img class="hero heroImgDesktop" src="/assets/img/phones.png">
+      <img class="hero heroImgDesktop" src="/assets/img/phones.png?v=2">
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -126,7 +126,7 @@
       <h3>Grow Closer Through Language</h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/messenger.png">
+        <img src="/assets/img/messenger.png?v=2">
         <div>
           <p>There are many awesome things about learning a loved one's language</p>
 
