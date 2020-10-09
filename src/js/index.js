@@ -82,14 +82,19 @@ function initLoaded () {
   });
 
   const img = document.querySelector('img.hero');
-  if (!img.complete || img.naturalWidth === 0) {
-    img.onload = () => {
+  if (!img) {
+    imgLoaded = true;
+  }
+  else {
+    if (!img.complete || img.naturalWidth === 0) {
+      img.onload = () => {
+        imgLoaded = true;
+        tryLoad();
+      };
+    } else {
       imgLoaded = true;
       tryLoad();
-    };
-  } else {
-    imgLoaded = true;
-    tryLoad();
+    }
   }
 
   function tryLoad () {

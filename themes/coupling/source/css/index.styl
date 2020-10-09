@@ -1,3 +1,4 @@
+@import 'challenge'
 @import 'settings'
 
 html
@@ -21,6 +22,9 @@ body
   transition opacity 0.25s
   &.loaded
     opacity 1 !important
+
+ol
+  padding-left 20px
 
 ul
   list-style none
@@ -51,7 +55,7 @@ h1, h2, h3
 
 h3
   font-size 28px
-  line-height 34px
+  line-height 42px
 
 button,
 .button,
@@ -68,6 +72,7 @@ input[type="submit"]
   max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
+  text-decoration none
   transform none
   vertical-align middle
   &[disabled]
@@ -93,6 +98,31 @@ input[type="text"]
   text-align center
   transition all .2s
   vertical-align middle
+
+.header
+  align-items center
+  display flex
+  justify-content center
+
+  .wordmark
+    color $yellow
+    font-family 'Titan One'
+    font-size 42px
+    line-height 56px
+    margin-bottom 0
+    margin-right 20px
+    margin-top 0
+    text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+    text-transform uppercase
+    +media1200()
+      font-size 60px
+      margin-right 30px
+
+  .logo
+    max-width 60px
+    +media1200()
+      max-width 100px
+      width 100px
 
 ul.bulletPoints
   align-items flex-start
@@ -197,31 +227,6 @@ section.hero
     +media1200()
       margin-right 100px
 
-  .header
-    align-items center
-    display flex
-    justify-content center
-
-    .wordmark
-      color $yellow
-      font-family 'Titan One'
-      font-size 42px
-      line-height 56px
-      margin-bottom 0
-      margin-right 20px
-      margin-top 0
-      text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
-      text-transform uppercas3
-      +media1200()
-        font-size 60px
-        margin-right 30px
-
-    .logo
-      max-width 60px
-      +media1200()
-        max-width 100px
-        width 100px
-
   img.hero
     &.heroImgDesktop
       display none
@@ -271,6 +276,16 @@ section.hero
         width 60%
       button
         width 40%
+
+  .challenge.button
+    background $red
+    color $white
+    display inline-block
+    height auto
+    font-weight 400
+    margin-top 30px
+    i
+      margin-right 5px
 
 form.subscribe
   align-items center

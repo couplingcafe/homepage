@@ -17,6 +17,11 @@
           <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
           <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
         </form>
+
+        <a class="button challenge" href="challenge">
+          <i class="fal fa-trophy"></i>
+          Play Today's Daily Language Challenge
+        </a>
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/phones.png">
@@ -184,9 +189,10 @@
         I'm a developer and designer. Before I led the <a
         href="https://aframe.io">A-Frame community</a>, teaching tens of
         thousands of people to build 3D worlds. In 2018, I founded <a href="https://supermedium.com">a VR
-        startup</a> that went through <a href="https://www.ycombinator.com">Y Combinator</a> and raised $1.2M. I took a
-        giant leap to tackle language learning. Now I am working 24/7 on
-        Coupling and am funding it out of my own pocket.
+        startup</a> that went through <a href="https://www.ycombinator.com">Y
+        Combinator</a> and raised $1.2M. I took a giant leap to tackle
+        language learning. Now I am working 24/7 on Coupling out of my
+        pocket.
       </p>
 
       <p style="text-align: center">

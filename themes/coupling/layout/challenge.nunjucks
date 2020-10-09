@@ -1,0 +1,75 @@
+<div id="container">
+  <section class="challenge">
+    <div class="sectionInner">
+      <a href="/" class="pageHeader">
+        <h1 class="wordmark">Coupling</h1>
+        <p class="subtitle">Learn Your Loved One's Language</p>
+      </a>
+
+      <img class="pageImage" src="/assets/img/hands.png">
+
+      <h1 class="pageTitle" data-text="Daily Language Challenge">Daily Language Challenge</h1>
+      <h2 class="challengeName">This Next Verse Tho, These Bars</h2>
+
+      <div class="content">
+        {{ page.content }}
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="subscribe">
+    <div class="sectionInner">
+      <h3>Subscribe to Get Challenges In Your Inbox Weekly</h3>
+
+      <div class="sectionInnerColumns">
+        <div class="pourImage">
+          <img src="/assets/img/pour.png">
+        </div>
+
+        <form class="subscribe">
+          <p>Check back here every day or two to see a new challenge!</p>
+
+          <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
+          <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
+        </form>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="construction">
+    <div class="sectionInner">
+      <h3>Coupling is Under Construction</h3>
+
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/construction.png">
+
+        <div>
+          <p>
+            These daily challenges are a starting point to try things out I build
+            the app. Flashcards, translations, and audio samples are coming soon
+          </p>
+
+          <p>
+            I'd love if you emailed me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a> with feedback and ideas on the challenges
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="footer">
+    <a href="https://twitter.com/learncoupling" data-twitter-track>
+      {% include "./svg/twitter.svg" %}
+    </a>
+    <a href="https://facebook.com/learncoupling" data-fb-track>
+      {% include "./svg/facebook.svg" %}
+    </a>
+    <a href="https://instagram.com/learncoupling" data-instagram-track>
+      {% include "./svg/instagram.svg" %}
+    </a>
+  </section>
+</div>

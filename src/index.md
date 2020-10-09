@@ -1,4 +1,4 @@
 ---
-title: The VR Comic Book Reader
+title: Coupling
 layout: home
 ---
