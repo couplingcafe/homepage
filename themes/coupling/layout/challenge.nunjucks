@@ -9,7 +9,7 @@
       <img class="pageImage" src="/assets/img/hands.png">
 
       <h1 class="pageTitle" data-text="Daily Language Challenge">Daily Language Challenge</h1>
-      <h2 class="challengeName">This Next Verse Tho, These Bars</h2>
+      <h2 class="challengeName">{{ page.description }}</h2>
 
       <div class="content">
         {{ page.content }}

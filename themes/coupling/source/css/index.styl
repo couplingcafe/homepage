@@ -43,9 +43,10 @@ b, p, li
 a
   color $text
   font-weight bold
+  text-decoration none
   transition all .2s
   &:hover:not(.button)
-    text-decoration underline 
+    text-decoration underline
     textShadow()
 
 h1, h2, h3
@@ -171,17 +172,17 @@ section
 
   .sectionInnerColumns
     align-items center
-    display flex 
-    flex-direction column 
+    display flex
+    flex-direction column
     img
-      max-width 200px  
+      max-width 200px
     > div
-      align-items center 
+      align-items center
       display flex
       flex-direction column
     +media1200()
       align-items center
-      display flex 
+      display flex
       flex-direction row
       justify-content center
       flex-wrap nowrap
@@ -350,12 +351,12 @@ section.about
     width 200px
     margin-bottom 20px
     boxShadow()
-  a 
-    color $black 
+  a
+    color $black
     font-weight bold
     &:hover
-      color $black
-      text-decoration underline
+      color $purple
+      text-decoration none
 
 section.footer
   display flex

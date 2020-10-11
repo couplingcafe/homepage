@@ -1,16 +1,17 @@
 ---
-title: Challenge
+title: Daily Language Challenge
 layout: challenge
+description: "This Next Verse Tho, These Bars"
 ---
 
 <h2>
   <i class="fal fa-trophy"></i>
-  Challenge 
+  Challenge
 </h2>
 
 Have the native speaking partner select a favorite song of their language.
-Break down a lyric or verse. Have the learner understand and repeat it. Then
-sing it together.
+Together, go through the lyrics of part of the song until the learner can
+understand and repeat it. Then sing it together!
 
 The goal is to learn a few words and practice speaking at a song pace.
 
@@ -23,28 +24,28 @@ The goal is to learn a few words and practice speaking at a song pace.
 
 2. Select a part of the song
 
-3. Get familiar with those lines with Google Translate 
+3. Get familiar with those lines (e.g., with Google Translate)
 
 <h2>
   <i class="fal fa-layer-group"></i>
-  Levels 
+  Levels
 </h2>
 
 ### Beginner
 
-Understand and sing one line
+Go through one line together until you can understand and sing it
 
 ### Intermediate
 
-Understand and sing one verse
+Go through one verse together until you can understand and sing it
 
 ### Advanced
 
-Understand and sing the chorus
+Go through the chorus together until you can understand and sing it
 
 <h2>
   <i class="fal fa-book"></i>
-  Homework 
+  Homework
 </h2>
 
 Create flashcards for at least three words that you learned. Make a note of

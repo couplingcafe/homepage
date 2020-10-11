@@ -1,11 +1,10 @@
-<title>{{ config.name }} | {{ config.title }}</title>
-
-<meta name="title" content="{{ config.name }} | {{ config.title }}">
-<meta name="og:title" content="{{ config.name }} | {{ config.title }}">
-<meta name="twitter:title" content="{{ config.name }} | {{ config.title }}">
-<meta name="description" content="{{ config.description }}">
-<meta name="og:description" content="{{ config.description }}">
-<meta name="twitter:description" content="{{ config.description }}">
+<title>{{ config.name }} | {{ page.title or config.title }}</title>
+<meta name="title" content="{{ config.name }} | {{ page.title or config.title }}">
+<meta name="og:title" content="{{ config.name }} | {{ page.title or config.title }}">
+<meta name="twitter:title" content="{{ config.name }} | {{ page.title or config.title }}">
+<meta name="description" content="{{ page.description or config.description }}">
+<meta name="og:description" content="{{ page.description or config.description }}">
+<meta name="twitter:description" content="{{ page.description or config.description }}">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
