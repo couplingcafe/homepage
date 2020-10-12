@@ -1,7 +1,7 @@
 ---
 title: Daily Language Challenge
 layout: challenge
-description: "This Next Verse Tho, These Bars"
+description: "Hide and Seek"
 ---
 
 <h2>
@@ -9,22 +9,21 @@ description: "This Next Verse Tho, These Bars"
   Challenge
 </h2>
 
-Have the native speaking partner select a favorite song of their language.
-Together, go through the lyrics of part of the song until the learner can
-understand and repeat it. Then sing it together!
+One person, the hider, will hide an object (e.g., a favorite toy) around the
+house. The hider must guide the seeker to the object using the target language.
+The seeker must listen to the directions to find the object.
 
-The goal is to learn a few words and practice speaking at a song pace.
+Then switch places!
+
+The goal is to practice speaking as a hider, and practice listening as a seeker.
 
 <h2>
   <i class="fal fa-pencil-alt"></i>
   Preparation
 </h2>
 
-1. Ask your partner for a song
-
-2. Select a part of the song
-
-3. Get familiar with those lines (e.g., with Google Translate)
+1. Refresh yourself on directional words. Such as forward, backwards, left, and
+   right!
 
 <h2>
   <i class="fal fa-layer-group"></i>
@@ -33,20 +32,27 @@ The goal is to learn a few words and practice speaking at a song pace.
 
 ### Beginner
 
-Go through one line together until you can understand and sing it
+Listen or speak directions such as go, stop, forward, backwards, left, right.
 
 ### Intermediate
 
-Go through one verse together until you can understand and sing it
+Listen or speak directions in full phrases such as "Go forward. Turn left. Go
+forward. Turn right". Throw in other words such as above, below, under, on top.
 
 ### Advanced
 
-Go through the chorus together until you can understand and sing it
+Listen or speak the entire directions all at once. If you are the hider, you
+must visualize the whole path and provide the instructions up front. If you are
+the hider, then you must listen and memorize the instructions up front!
+
+Depending on how advanced you are, get creative with the directions (e.g., "in
+the room where I brush my teeth").
 
 <h2>
   <i class="fal fa-book"></i>
   Homework
 </h2>
 
-Create flashcards for at least three words that you learned. Make a note of
-the song that you learned it from!
+If you are a beginner or intermediate, create flashcards for at least three
+words that you learned. If you are advanced, just focus on practicing speaking
+and listening!
