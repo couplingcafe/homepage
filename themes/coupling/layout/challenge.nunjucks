@@ -8,7 +8,7 @@
 
       <img class="pageImage" src="/assets/img/hands.png">
 
-      <h1 class="pageTitle" data-text="Daily Language Challenge">Daily Language Challenge</h1>
+      <h1 class="pageTitle" data-text="Weekly Language Challenge">Weekly Language Challenge</h1>
       <h2 class="challengeName">{{ page.description }}</h2>
 
       <div class="content">
@@ -47,7 +47,7 @@
 
         <div>
           <p>
-            These daily challenges are a starting point to try things out I build
+            These weekly challenges are a starting point to try things out I build
             the app. Flashcards, translations, and audio samples are coming soon
           </p>
 

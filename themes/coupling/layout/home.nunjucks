@@ -20,7 +20,7 @@
 
         <a class="button challenge" href="challenge">
           <i class="fal fa-trophy"></i>
-          Play Today's Daily Language Challenge
+          Play Today's Weekly Language Challenge
         </a>
       </div>
 
@@ -71,11 +71,11 @@
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-address-card"></i>
-              Generate new flashcards from conversations and challenges 
+              Generate new flashcards from conversations and challenges
             </li>
             <li>
               <i class="fal fa-bullseye-arrow"></i>
-              Hunt down tricky words and phrases you are struggling with 
+              Hunt down tricky words and phrases you are struggling with
             </li>
             <li>
               <i class="fal fa-battery-full"></i>
@@ -108,7 +108,7 @@
             </li>
             <li>
               <i class="fal fa-video"></i>
-              Watch mini language lesson videos created by your partner 
+              Watch mini language lesson videos created by your partner
             </li>
             <li>
               <i class="fal fa-map-marker-question"></i>
@@ -196,7 +196,7 @@
       </p>
 
       <p style="text-align: center">
-        Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a> 
+        Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a>
       </p>
     </div>
     {% include "./svg/wave.svg" %}

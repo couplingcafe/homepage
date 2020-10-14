@@ -1,5 +1,5 @@
 ---
-title: Daily Language Challenge
+title: Weekly Language Challenge
 layout: challenge
 description: "Hide and Seek"
 ---
