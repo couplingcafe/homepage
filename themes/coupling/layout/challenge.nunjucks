@@ -27,7 +27,7 @@
           <img src="/assets/img/pour.png">
         </div>
 
-        <form class="subscribe">
+        <form class="subscribeForm">
           <p>Check back here every day or two to see a new challenge!</p>
 
           <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
