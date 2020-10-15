@@ -267,7 +267,7 @@ section.hero
       font-size 26px
       margin 10px 0 50px 0
 
-  form.subscribe
+  .subscribeForm
     +media1200()
       align-items center
       flex-direction row
@@ -287,7 +287,7 @@ section.hero
     i
       margin-right 5px
 
-form.subscribe
+.subscribeForm
   align-items center
   display flex
   flex-direction column
@@ -301,6 +301,9 @@ form.subscribe
 
   button
     font-weight bold
+    &[disabled]
+      background #CCC
+      box-shadow none
 
 section.problem
   sectionYellow()

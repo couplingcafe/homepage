@@ -108,7 +108,7 @@ function initLoaded () {
  * Init XHR handler to subscribe.
  */
 function initSubscribeForm () {
-  const forms = $$('form.subscribe');
+  const forms = $$('.subscribeForm');
   if (!forms || !forms.length) { return; }
 
   forms.forEach(form => {
@@ -117,7 +117,7 @@ function initSubscribeForm () {
 
     let originalHeaderText = '';
 
-    form.addEventListener('submit', evt => {
+    button.addEventListener('click', evt => {
       evt.preventDefault();
 
       const xhr = new XMLHttpRequest();
@@ -128,18 +128,15 @@ function initSubscribeForm () {
       xhr.open('POST', endpoint);
 
       xhr.addEventListener('load', () => {
-        if (parseInt(xhr.status, 10) !== 200) {
-          window.location.href = 'https://learncoupling.com/subscribe';
-        }
         if (button) {
           button.disabled = true;
-          button.innerHTML = 'Subscribed!';
+          button.innerHTML = 'You are subscribed!';
         }
       });
 
       xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
       xhr.send(JSON.stringify({
-        email: $('[name="email"]').value,
+        email: input.value,
         source: document.title
       }));
 
