@@ -164,8 +164,29 @@
           <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
         </form>
       </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
 
-      <p>And read updates on our <b><a href="https://coupling.substack.com">blog</a></b>!</p>
+  <section class="blogSection">
+    <div class="sectionInner">
+      <h3>Blog</h3>
+
+      <ul class="blog">
+      {% for blog in site.data.blog %}
+        {% if loop.index0 < 6 %}
+        <li>
+          {% include "./svg/wave.svg" %}
+          <a class="blogImage" data-blog-track href="{{ blog.link }}" style="background-image: url({{ blog.image }})">
+            <div class="blogOverlay">
+              <h3 class="blogTitle">{{ blog.title }}</h3>
+              <p class="blogSubtitle">{{ blog.subtitle }}</p>
+            </div>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
     </div>
     {% include "./svg/wave.svg" %}
   </section>

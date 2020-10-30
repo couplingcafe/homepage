@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production hexo generate && NODE_ENV=production webpack",
     "clean": "hexo clean",
     "deploy": "npm run build && echo 'learncoupling.com' > public/CNAME && ghpages -p public -r git@github.com:learncoupling/learncoupling.github.io",
-    "start": "hexo generate --draft --watch & live-server --port=5000 --no-browser public & webpack --watch"
+    "start": "hexo generate --draft --watch & live-server --port=5000 --no-browser public & webpack --watch",
+    "substack": "node substack.js && git add src && git commit -m 'sync substack' && git push origin master && npm run deploy"
   },
   "description": "Website.",
   "main": "index.js",
@@ -29,17 +30,17 @@
     "hexo-renderer-stylus": "0.3.1",
     "hexo-server": "0.2.0",
     "live-server": "^1.2.1",
-    "moment": "^2.27.0",
     "node-fetch": "^2.6.0",
     "stylus": "0.54.5",
     "webpack": "^4.42.0",
-    "webpack-dev-server": "^3.10.3",
-    "xml2js": "^0.4.23"
+    "webpack-dev-server": "^3.10.3"
   },
   "hexo": {
     "version": "4.2.1"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "moment": "^2.29.1",
+    "webpack-cli": "^3.3.11",
+    "xml2js": "^0.4.23"
   }
 }
