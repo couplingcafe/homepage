@@ -13,7 +13,6 @@ async function get () {
   });
 
   const out = data.rss.channel[0].item.map(blog => {
-    console.log(blog);
     blog.title = blog.title[0];
     if (blog.title.indexOf(':') !== -1) {
       blog.title = blog.title.split(':')[1];
