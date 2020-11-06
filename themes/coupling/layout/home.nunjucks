@@ -18,9 +18,9 @@
           <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
         </form>
 
-        <a class="button challenge" href="challenge">
-          <i class="fal fa-trophy"></i>
-          This Week's Language Challenge
+        <a class="button challenge" href="{{ site.data.blog[0].link }}">
+          <i class="fal fa-newspaper"></i>
+          Read This Week's Development Update 
         </a>
       </div>
 
