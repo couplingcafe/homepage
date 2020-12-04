@@ -224,11 +224,9 @@ section.hero
 
   .heroLeft
     +media1200()
-      margin-right 50px
+      margin 0 60px 0 20px
       position relative
       bottom 20px
-    +media1200()
-      margin-right 100px
 
   img.hero
     &.heroImgDesktop
@@ -348,8 +346,11 @@ section.subscribe
       max-width 150px
 
 section.blogSection
-  sectionPurple()
+  sectionDarkBlue()
   z-index 1
+
+  h3
+    color $white
 
   .blog
     display flex
@@ -454,9 +455,6 @@ section.about
   a
     color $black
     font-weight bold
-    &:hover
-      color $purple
-      text-decoration none
 
 section.footer
   display flex
