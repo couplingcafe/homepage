@@ -134,6 +134,10 @@ function initSubscribeForm () {
         }
       });
 
+      xhr.addEventListener('error', () => {
+        window.location.href = 'http://eepurl.com/hfV9gr';
+      });
+
       xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
       xhr.send(JSON.stringify({
         email: input.value,
