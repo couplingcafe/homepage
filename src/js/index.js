@@ -130,7 +130,7 @@ function initSubscribeForm () {
       xhr.addEventListener('load', () => {
         if (button) {
           button.disabled = true;
-          button.innerHTML = 'You are subscribed!';
+          button.innerHTML = 'Subscribed!';
         }
       });
 
