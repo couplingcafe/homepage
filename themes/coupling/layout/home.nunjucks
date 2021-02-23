@@ -20,7 +20,7 @@
 
         <a class="button challenge" href="{{ site.data.blog[0].link }}">
           <i class="fal fa-newspaper"></i>
-          Read This Week's Development Update 
+          Coupling is Available Now!
         </a>
       </div>
 
