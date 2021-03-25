@@ -6,23 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initViewportAnimations();
 });
 
-function initABTest () {
-  if (document.body.dataset.type !== 'home') { return; }
-
-  if (Math.random() >= 0.5 || localStorage.getItem('abTestTitle1')) {
-    localStorage.setItem('abTestTitle1', 1);
-    amp().setUserProperties({'abTestTitle1': true});
-    $('.heroTitle').innerText = '';
-    $('.heroSubtitle').innerHTML = '';
-  } else {
-    amp().setUserProperties({'abTestTitle1': false});
-  }
-}
-
 function initAnalytics () {
   if (window.location.host.startsWith('localhost')) { return; }
 
-  amp().logEvent('Page View', {
+  amp().logEvent('Landing Page View', {
     page: document.body.dataset.type || document.title
   });
 
@@ -34,19 +21,19 @@ function initAnalytics () {
         const b = document.body;
         const percent = this.scrollY / (document.body.clientHeight - window.innerHeight);
         if (percent >= 0.25 && !scrollTracked[0]) {
-          amp().logEvent('25% Scroll Depth');
+          amp().logEvent('Landing Page 25% Scroll Depth');
           scrollTracked[0] = true;
         }
         if (percent >= 0.5 && !scrollTracked[1]) {
-          amp().logEvent('50% Scroll Depth');
+          amp().logEvent('Landing Page 50% Scroll Depth');
           scrollTracked[1] = true;
         }
         if (percent >= 0.75 && !scrollTracked[2]) {
-          amp().logEvent('75% Scroll Depth');
+          amp().logEvent('Landing Page 75% Scroll Depth');
           scrollTracked[2] = true;
         }
         if (percent >= 0.95 && !scrollTracked[3]) {
-          amp().logEvent('100% Scroll Depth');
+          amp().logEvent('Landing Page 100% Scroll Depth');
           scrollTracked[3] = true;
         }
         ticking = false;
@@ -58,13 +45,13 @@ function initAnalytics () {
   $$('form.subscribe button').forEach(btn => {
     btn.addEventListener('click', () => {
       console.log('Subscribe button click.');
-      amp().logEvent('Subscribe');
+      amp().logEvent('Landing Page Subscribe');
     });
   });
 
   $$('a').forEach(link => {
     link.addEventListener('click', () => {
-      amp().logEvent('Link Click', {
+      amp().logEvent('Landing Page Link Click', {
         href: link.getAttribute('href'),
         text: link.innerText
       });
