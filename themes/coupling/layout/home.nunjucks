@@ -223,15 +223,19 @@
     {% include "./svg/wave.svg" %}
   </section>
 
-  <section class="footer">
-    <a href="https://twitter.com/learncoupling" data-twitter-track>
-      {% include "./svg/twitter.svg" %}
-    </a>
-    <a href="https://facebook.com/learncoupling" data-fb-track>
-      {% include "./svg/facebook.svg" %}
-    </a>
-    <a href="https://instagram.com/learncoupling" data-instagram-track>
-      {% include "./svg/instagram.svg" %}
-    </a>
-  </section>
+  <div class="footer">
+    <div>
+      <a href="https://twitter.com/learncoupling" data-twitter-track>
+        {% include "./svg/twitter.svg" %}
+      </a>
+      <a href="https://facebook.com/learncoupling" data-fb-track>
+        {% include "./svg/facebook.svg" %}
+      </a>
+      <a href="https://instagram.com/learncoupling" data-instagram-track>
+        {% include "./svg/instagram.svg" %}
+      </a>
+    </div>
+
+    <a class="privacy" href="/privacy">Privacy Policy</a>
+  </div>
 </div>

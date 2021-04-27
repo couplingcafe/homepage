@@ -456,25 +456,36 @@ section.about
     color $black
     font-weight bold
 
-section.footer
-  display flex
+.footer
   background $red
-  flex-direction row
-  justify-content center
-  padding 80px 0 40px 0
-  width 100%
-  z-index -1
+  padding-bottom 40px
+  text-align center
 
-  a
-    font-size 36px
-    cursor pointer
-    color $white
-    margin 0 15px
-    textShadow()
-  svg
-    fill $white
-    height 40px
-    width 40px
-    transition fill .2s
-    &:hover
-      fill $blue
+  > div
+    display flex
+    flex-direction row
+    justify-content center
+    padding 80px 0 40px 0
+    width 100%
+    z-index -1
+
+    a
+      font-size 36px
+      cursor pointer
+      color $white
+      margin 0 15px
+      textShadow()
+    svg
+      fill $white
+      height 40px
+      width 40px
+      transition fill .2s
+      &:hover
+        fill $blue
+
+  .privacy
+    font-size 12px
+    font-style italic
+    margin 0 auto
+    padding 10px 0
+    width 100%
