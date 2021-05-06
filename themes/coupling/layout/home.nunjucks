@@ -33,15 +33,16 @@
 
         <div>
           <p>
-            <b>Learning a language today is a lonely process</b>: tap on gamified
-            apps, listen to headless voices, read textbooks, talk to strangers
-            online. It's hard to learn a language without interacting with people.
+            <b>Learning a language today can be a lonely process</b>: tap on
+            gamified apps, listen to headless voices, read textbooks, talk to
+            strangers online. It's hard to learn a language without interacting
+            with people
           </p>
 
           <p>
             Many of us have a native speaker around us all the time. Perhaps
             they're the reason we started learning. <b>I started Coupling to
-            plug our loved ones into our language journey and bring it life.</b>
+            plug our loved ones into our language journey and bring it life</b>
           </p>
         </div>
       </div>
@@ -58,7 +59,7 @@
 
         <div>
           <p>
-            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, the system used by polyglots and medical students to memorize tens of thousands of terms
+            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, used by polyglots and medical students to memorize tens of thousands of terms
           </p>
 
           <ul class="bulletPoints">
@@ -96,16 +97,16 @@
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-comments"></i>
-              Play short daily speaking and listening challenges together
+              <i class="fal fa-plus"></i>
+              Receive fun and useful vocabulary from your partner
             </li>
             <li>
-              <i class="fal fa-video"></i>
-              Watch mini language lesson videos created by your partner
+              <i class="fal fa-volume"></i>
+              Listen to audio recordings spoken from your partner
             </li>
             <li>
               <i class="fal fa-map-marker-question"></i>
-              Get help from your partner in comment threads on hard flashcards
+              Ask for help, details, or edits on flashcards
             </li>
           </ul>
         </div>
