@@ -13,14 +13,9 @@
 
         <p class="subtitle">Fun and rewarding language learning for couples</p>
 
-        <form class="subscribeForm">
-          <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
-          <button class="submit" type="submit" data-subscribe-track>Get Early Access</button>
-        </form>
-
-        <a class="button challenge" href="{{ site.data.blog[0].link }}">
-          <i class="fal fa-newspaper"></i>
-          Coupling is Available Now!
+        <a class="button ctaButton" href="/app">
+          <i class="fal fa-rocket"></i>
+          Get Started Learning
         </a>
       </div>
 
@@ -50,8 +45,6 @@
           </p>
         </div>
       </div>
-
-      <p><b><a href="https://coupling.substack.com/p/introducing-coupling">Read more about Coupling&hellip;</a></b></p>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -152,7 +145,7 @@
 
   <section class="subscribe">
     <div class="sectionInner">
-      <h3>Try Coupling for Free to Learn Any Lanugage</h3>
+      <h3>Over 100 Languages Supported</h3>
 
       <div class="sectionInnerColumns">
         <div class="pourImage">
@@ -160,8 +153,10 @@
         </div>
 
         <form class="subscribeForm">
-          <input class="fal" name="email" type="email" placeholder="&#xf0e0  Your email..." required>
-          <button class="submit" type="submit" data-subscribe-track>Get Notified</button>
+          <a class="button purple ctaButton" href="/app">
+            <i class="fal fa-rocket"></i>
+            Get Started Now
+          </a>
         </form>
       </div>
     </div>
@@ -177,9 +172,10 @@
         {% if loop.index0 < 6 %}
         <li>
           {% include "./svg/wave.svg" %}
-          <a class="blogImage" data-blog-track href="{{ blog.link }}" style="background-image: url({{ blog.image }})">
+          <a class="blogImage" data-blog-track href="{{ blog.link }}">
+            {% if blog.image %}<img src="{{ blog.image }}">{% endif %}
             <div class="blogOverlay">
-              <h3 class="blogTitle">{{ blog.title }}</h3>
+              <h3 class="blogTitle">{{ blog.title.slice(0, 28) }}</h3>
               <p class="blogSubtitle">{{ blog.subtitle }}</p>
             </div>
           </a>

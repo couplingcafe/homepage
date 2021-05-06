@@ -67,8 +67,8 @@ input[type="submit"]
   boxShadow()
   color $text
   cursor pointer
+  display inline-block
   font-size 18px
-  height 60px
   max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
@@ -81,6 +81,20 @@ input[type="submit"]
     background lighten($blue, 20%)
   &:active
     background darken($blue, 5%)
+  &.green
+    background $green
+    &:hover
+      background lighten($green, 20%)
+    &:active
+      background darken($green, 5%)
+  &.purple
+    background $purple
+    &:hover
+      background lighten($purple, 20%)
+    &:active
+      background darken($purple, 5%)
+  i
+    margin-right 5px
 
 input[type="email"],
 input[type="text"]
@@ -266,17 +280,6 @@ section.hero
       font-size 26px
       margin 10px 0 30px 0
 
-  .subscribeForm
-    +media1200()
-      align-items center
-      flex-direction row
-      flex-wrap nowrap
-      input
-        margin 0 20px 0 0
-        width 60%
-      button
-        width 40%
-
   .challenge.button
     background $yellow
     display inline-block
@@ -285,14 +288,6 @@ section.hero
     margin-top 10px
     i
       margin-right 5px
-
-.subscribeForm
-  align-items center
-  display flex
-  flex-direction column
-  justify-content center
-  margin-top 40px
-  width 100%
 
   input,
   button
@@ -360,6 +355,7 @@ section.blogSection
     li
       align-items center
       boxShadow()
+      border-radius 5px 2px 5px 2px
       display flex
       margin 10px
       max-width 100%
@@ -405,12 +401,21 @@ section.blogSection
         line-height 42px
     a
       text-shadow none
+     img
+       background none
+       border-radius 2px
+       bottom 0
+       left 0
+       margin 0 auto
+       max-height 180px
+       position absolute
+       right 0
+       text-align center
+       top 20px
+       z-index 0
     .blogImage
-      background-color $darkblue
-      background-position 50% 10%
-      background-repeat no-repeat
-      background-size 100% auto
-      border-radius 0
+      background $purple
+      border-radius 5px
       boxShadow()
       display inline-block
       height 240px
@@ -421,7 +426,7 @@ section.blogSection
       transition all .15s
       width 480px
       +media1200()
-        height 320px
+        height 240px
       &:hover .blogOverlay
         background $red
     .blogOverlay
@@ -489,3 +494,7 @@ section.about
     margin 0 auto
     padding 10px 0
     width 100%
+
+.ctaButton
+  padding-bottom 20px
+  padding-top 20px

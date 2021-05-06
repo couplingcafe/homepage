@@ -21,9 +21,10 @@ async function get () {
     blog.date = moment(blog.pubDate[0]).format('MMMM DD YYYY');
 
     try {
-      blog.image = blog['content:encoded'][0].match(new RegExp('<img src="(.*?)"'))[1];
+      const imgs = blog['content:encoded'][0].match(new RegExp('<img src="(.*?)"', 'g'));
+      blog.image = imgs[1].match(new RegExp('<img src="(.*?)"'))[1];
     } catch (e) {
-      blog.image = '/assets/img/logo.png';
+      blog.image = '/assets/img/logo.svg';
     }
 
     blog.subtitle = blog.description[0];
