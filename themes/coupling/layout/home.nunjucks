@@ -225,11 +225,16 @@
       <a href="https://twitter.com/learncoupling" data-twitter-track>
         {% include "./svg/twitter.svg" %}
       </a>
+      <!--
       <a href="https://facebook.com/learncoupling" data-fb-track>
         {% include "./svg/facebook.svg" %}
       </a>
       <a href="https://instagram.com/learncoupling" data-instagram-track>
         {% include "./svg/instagram.svg" %}
+      </a>
+      -->
+      <a href="https://learncoupling.com/discord">
+        {% include "./svg/discord.svg" %}
       </a>
     </div>
 
