@@ -7,11 +7,11 @@
           <img class="logo" src="/assets/img/logo.svg">
         </div>
 
-        <h2 class="title">Learn Your Loved One's Language</h2>
+        <h2 class="title">The Language Learning App for Couples</h2>
 
         <img class="hero heroImgMobile" src="/assets/img/phones.png">
 
-        <p class="subtitle">Fun and rewarding language learning for couples</p>
+        <p class="subtitle">Fun and rewarding language learning with your partner</p>
 
         <a class="button ctaButton" href="/app">
           <i class="fal fa-rocket"></i>
