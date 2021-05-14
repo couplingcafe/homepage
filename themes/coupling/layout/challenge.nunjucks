@@ -1,0 +1,260 @@
+<div id="container">
+  <section class="hero">
+    <div class="sectionInner">
+      <div class="heroLeft">
+        <div class="header">
+          <h1 class="wordmark">Coupling</h1>
+          <img class="logo" src="/assets/img/logo.svg">
+        </div>
+
+        <h2 class="title">The Language Learning App for Couples</h2>
+
+        <img class="hero heroImgMobile" src="/assets/img/phones.png">
+
+        <p class="subtitle">Pledge money, learn a language, get money back</p>
+
+        <a class="button ctaButton" href="/app">
+          <i class="fal fa-rocket"></i>
+          Take the Challenge Together 
+        </a>
+      </div>
+
+      <img class="hero heroImgDesktop" src="/assets/img/phones.png?v=2">
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="problem">
+    <div class="sectionInner">
+      <h3>
+        <i class="fal fa-question-circle"></i>
+        How It Works
+      </h3>
+      
+      <p>
+        A big challenge to language learning is motivation. Coupling adds two
+        motivators: money and your partner
+      </p>
+
+      <ul class="howItWorks">
+        <li>
+          <div>
+            <i class="fal fa-money-bill"></i>
+          </div>
+          <p>1. Commit $30 this month towards learning a language</p>
+        </li> 
+
+        <li>
+          <div>
+            <i class="fal fa-hand-holding-usd"></i>
+          </div>
+          <p>
+            2. If you skip a day, $0.50 goes to your partner and $0.50 goes to our tip cup 
+          </p>
+        </li>
+
+        <li>
+          <div>
+            <i class="fal fa-calendar-check"></i>
+          </div>
+          <p>
+            3. For each day you complete a learning goal, earn $1 back!
+          </p>
+        </li>
+      </ul>
+
+      <p>The more you follow through on your goals, the more you earn back</p>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="flashcard">
+    <div class="sectionInner">
+      <h3>A Powerful Language Learning App</h3>
+
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/library.png">
+
+        <div>
+          <p>
+            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced
+            repetition flashcards</a>
+          </p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-chart-line"></i>
+              The more you learn a word, the less you have to review it
+            </li>
+            <li>
+              <i class="fal fa-books"></i>
+              Pull flashcards from a content library of starter decks and
+              booster packs
+            </li>
+            <li>
+              <i class="fal fa-sparkles"></i>
+              Automatic translations, audio, and breakdowns for any word you
+              want to add
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="coach">
+    <div class="sectionInner">
+      <h3>Your Partner as a Cheerleader</h3>
+
+      <div class="sectionInnerColumns reverse">
+        <img src="/assets/img/challenges.png">
+
+        <div>
+          <p>
+            Coupling pulls your partner into your language journey to 
+            contribute and motivate
+          </p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-handshake"></i>
+              Multiplayer where partners can add audio, edits, notes, vocabulary
+            </li>
+            <li>
+              <i class="fal fa-thumbs-up"></i>
+              Get nagged when falling behind and get kudos when completing a goal 
+            </li>
+            <li>
+              <i class="fal fa-envelope"></i>
+              Weekly reports in your inboxes on learning progress and statistics
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="language">
+    <div class="sectionInner">
+      <h3>Fueling Motivation</h3>
+
+      <div class="sectionInnerColumns">
+        <img src="/assets/img/messenger.png?v=2">
+        <div>
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-money-bill"></i>
+              Pledge money up front to cement your goal to learn your partner's language
+            </li>
+            <li>
+              <i class="fal fa-hand-holding-usd"></i>
+              Earn money back through studying, rest goes to your partner and our tip cups!
+            </li>
+            <li>
+              <i class="fal fa-rocket"></i>
+              See your streak and statistics shoot up on your language learning dashboard 
+            </li>
+          </ul>
+
+          <b>Try it free for a week and we'll refund the pledge if you are not satisified</b>
+        </div>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="subscribe">
+    <div class="sectionInner">
+      <h3>Over 100 Languages Supported!</h3>
+
+      <div class="sectionInnerColumns">
+        <div class="pourImage">
+          <img src="/assets/img/pour.png">
+        </div>
+
+        <form class="subscribeForm">
+          <a class="button purple ctaButton" href="/app">
+            <i class="fal fa-rocket"></i>
+            Take the Pledge to Learn 
+          </a>
+        </form>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="blogSection">
+    <div class="sectionInner">
+      <h3>Blog</h3>
+
+      <ul class="blog">
+      {% for blog in site.data.blog %}
+        {% if loop.index0 < 6 %}
+        <li>
+          {% include "./svg/wave.svg" %}
+          <a class="blogImage" data-blog-track href="{{ blog.link }}">
+            {% if blog.image %}<img src="{{ blog.image }}">{% endif %}
+            <div class="blogOverlay">
+              <h3 class="blogTitle">{{ blog.title.slice(0, 28) }}</h3>
+              <p class="blogSubtitle">{{ blog.subtitle }}</p>
+            </div>
+          </a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="about">
+    <div class="sectionInner">
+      <h3>About Me</h3>
+
+      <img src="/assets/img/me.jpg">
+
+      <p>
+        Hey! I’m <a href="https://twitter.com/andgokevin">Kevin</a>, a
+        developer and designer. My wife Heidi is from China. I’ve been
+        self-learning Chinese for years. I started Coupling to help myself and
+        other couples who have tried to learn each other's languages.
+        Eventually, I hope this brings the world a little bit closer in
+        understanding each other
+      </p>
+
+      <p>
+        I've been grinding on building Coupling out of my pocket for months.
+        I'm taking the commitment that for each day I don't complete my
+        language learning goals, I'm donating $1 to my charity of choice
+      </p>
+
+      <p style="text-align: center">
+        Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a>
+      </p>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <div class="footer">
+    <div>
+      <a href="https://twitter.com/learncoupling" data-twitter-track>
+        {% include "./svg/twitter.svg" %}
+      </a>
+      <!--
+      <a href="https://facebook.com/learncoupling" data-fb-track>
+        {% include "./svg/facebook.svg" %}
+      </a>
+      <a href="https://instagram.com/learncoupling" data-instagram-track>
+        {% include "./svg/instagram.svg" %}
+      </a>
+      -->
+      <a href="https://learncoupling.com/discord">
+        {% include "./svg/discord.svg" %}
+      </a>
+    </div>
+
+    <a class="privacy" href="/privacy">Privacy</a>
+  </div>
+</div>

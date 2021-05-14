@@ -1,4 +1,3 @@
-@import 'challenge'
 @import 'settings'
 
 html
@@ -147,6 +146,8 @@ ul.bulletPoints
     align-items center
     display flex
     text-align left
+    +media1200()
+      margin 15px 0
     i
       color $white
       font-size 34px
@@ -190,11 +191,13 @@ section
     img
       max-width 200px
     > div
-      align-items center
       display flex
       flex-direction column
+      +media1200()
+        > p:first-child
+          font-weight bold
     +media1200()
-      align-items center
+      align-items flex-start 
       display flex
       flex-direction row
       justify-content center
@@ -303,12 +306,57 @@ section.problem
   sectionYellow()
   z-index 10
 
+  p
+    text-align center
+
   img
     border-radius 200px
     boxShadow()
     height 200px
     margin-bottom 20px
     width 200px
+
+  .howItWorks
+    display flex
+    justify-content center
+    margin-top 20px
+    
+    li
+      align-items center
+      display flex
+      flex-direction column
+      justify-content flex-start
+      text-align center
+      margin 0 20px
+
+      &:nth-child(1) div
+        background $blue
+        textShadow()
+      &:nth-child(2) div
+        background $red
+        textShadow()
+      &:nth-child(3) div
+        background $green
+        textShadow()
+
+      p
+        max-width 300px
+        text-align center
+      
+      div
+        align-items center
+        border 1px solid $shadow 
+        border-radius 200px
+        boxShadow()
+        display flex
+        flex-direction column
+        justify-content center
+        height 100px
+        width 100px
+        i
+          font-size 40px
+        span
+          font-size 30px
 
 section.flashcard
   sectionBlue()
@@ -338,6 +386,8 @@ section.subscribe
       left 8px
       position relative
       max-width 150px
+  .sectionInnerColumns 
+    align-items center
 
 section.blogSection
   sectionDarkBlue()
@@ -376,7 +426,7 @@ section.blogSection
         fill $red
       +media1200()
         .wave
-          bottom 80px
+          bottom 50px
           transform scaleX(2.285) scaleY(0.5) rotate(180deg)
     p
       color $white
@@ -387,18 +437,11 @@ section.blogSection
       white-space nowrap
       overflow hidden
       text-overflow ellipsis
-      +media1200()
-        font-size 20px
-        line-height 36px
-
     h3
       color $white
       font-size 18px
       line-height 1.5
       margin 0
-      +media1200()
-        font-size 28px
-        line-height 42px
     a
       text-shadow none
      img
@@ -424,7 +467,7 @@ section.blogSection
       position relative
       transform scale(1)
       transition all .15s
-      width 480px
+      width 320px
       +media1200()
         height 240px
       &:hover .blogOverlay
