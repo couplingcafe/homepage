@@ -11,11 +11,11 @@
 
         <img class="hero heroImgMobile" src="/assets/img/phones.png">
 
-        <p class="subtitle">Fun and rewarding language learning with your partner</p>
+        <p class="subtitle">Learn a language with your native speaking partner</p>
 
         <a class="button ctaButton" href="/app">
           <i class="fal fa-rocket"></i>
-          Get Started Learning
+          Take the Challenge Together 
         </a>
       </div>
 
@@ -24,56 +24,33 @@
     {% include "./svg/wave.svg" %}
   </section>
 
-  <section class="problem">
-    <div class="sectionInner">
-      <h3>A More Social Language App</h3>
-
-      <div class="sectionInnerColumns">
-        <img src="/assets/img/us.jpg">
-
-        <div>
-          <p>
-            <b>Learning a language today can be a lonely process</b>: tap on
-            gamified apps, listen to headless voices, read textbooks, talk to
-            strangers online. It's hard to learn a language without interacting
-            with people
-          </p>
-
-          <p>
-            Many of us have a native speaker around us all the time. Perhaps
-            they're the reason we started learning. <b>I started Coupling to
-            plug our loved ones into our language journey and bring it life</b>
-          </p>
-        </div>
-      </div>
-    </div>
-    {% include "./svg/wave.svg" %}
-  </section>
-
   <section class="flashcard">
     <div class="sectionInner">
-      <h3>Retain Every Word with Spaced Repetition Flashcards</h3>
+      <h3>A Powerful Language Learning App</h3>
 
       <div class="sectionInnerColumns">
         <img src="/assets/img/library.png">
 
         <div>
           <p>
-            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced repetition</a>, used by polyglots and medical students to memorize tens of thousands of terms
+            Lock words into memory with <a href="https://wikipedia.org/wiki/Spaced_repetition">spaced
+            repetition flashcards</a>
           </p>
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-address-card"></i>
-              Generate new flashcards from conversations and challenges
+              <i class="fal fa-chart-line"></i>
+              The more you learn a word, the less you have to review it
             </li>
             <li>
-              <i class="fal fa-bullseye-arrow"></i>
-              Hunt down tricky words and phrases you are struggling with
+              <i class="fal fa-books"></i>
+              Pull flashcards from a content library of starter decks and
+              booster packs
             </li>
             <li>
-              <i class="fal fa-battery-full"></i>
-              Stay motivated as your partner keeps track of your progress
+              <i class="fal fa-sparkles"></i>
+              Automatic translations, audio, and breakdowns for any word you
+              want to add
             </li>
           </ul>
         </div>
@@ -84,58 +61,28 @@
 
   <section class="coach">
     <div class="sectionInner">
-      <h3>Your Partner As Your Coach</h3>
+      <h3>A Partner By Your Side</h3>
 
       <div class="sectionInnerColumns reverse">
         <img src="/assets/img/challenges.png">
 
         <div>
           <p>
-            Coupling makes it seamless for your partner to guide you without
-            having to turn into an on-demand language teacher
+            A language journey that includes your partner
           </p>
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-plus"></i>
-              Receive fun and useful vocabulary from your partner
+              <i class="fal fa-handshake"></i>
+              Multiplayer where partners can add audio, edits, notes, vocabulary
             </li>
             <li>
-              <i class="fal fa-volume"></i>
-              Listen to audio recordings spoken from your partner
+              <i class="fal fa-thumbs-up"></i>
+              Get nagged when falling behind and get kudos when completing a goal 
             </li>
             <li>
-              <i class="fal fa-map-marker-question"></i>
-              Ask for help, details, or edits on flashcards
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    {% include "./svg/wave.svg" %}
-  </section>
-
-  <section class="language">
-    <div class="sectionInner">
-      <h3>Grow Closer Through Language</h3>
-
-      <div class="sectionInnerColumns">
-        <img src="/assets/img/messenger.png?v=2">
-        <div>
-          <p>There are many awesome things about learning a loved one's language</p>
-
-          <ul class="bulletPoints">
-            <li>
-              <i class="fal fa-heart"></i>
-              Grow closer together through understanding their language and culture
-            </li>
-            <li>
-              <i class="fal fa-hand-holding-heart"></i>
-              Connect more deeply to them, their family, and their friends
-            </li>
-            <li>
-              <i class="fal fa-laugh-beam"></i>
-              Create inside memes and jokes together
+              <i class="fal fa-envelope"></i>
+              Weekly reports in your inboxes on learning progress and statistics
             </li>
           </ul>
         </div>
@@ -154,9 +101,9 @@
         </div>
 
         <form class="subscribeForm">
-          <a class="button purple ctaButton" href="/app">
+          <a class="button ctaButton" href="/app">
             <i class="fal fa-rocket"></i>
-            Get Started Now
+            Get Started Together 
           </a>
         </form>
       </div>
@@ -195,26 +142,10 @@
       <img src="/assets/img/me.jpg">
 
       <p>
-        Hey! I’m <a href="https://twitter.com/andgokevin">Kevin</a>, and my
-        wife Heidi is from China. I’ve been self-learning Cantonese and
-        Mandarin for years. I also speak Vietnamese and some Spanish. I
-        started Coupling to help myself and other couples who have tried to
-        learn each other's languages. Eventually, I hope this brings the world
-        a little bit closer in understanding each other.
-      </p>
-
-      <p>
-        I'm a developer and designer. Before I led the <a
-        href="https://aframe.io">A-Frame community</a>, teaching tens of
-        thousands of people to build 3D worlds. In 2018, I founded <a href="https://supermedium.com">a VR
-        startup</a> that went through <a href="https://www.ycombinator.com">Y
-        Combinator</a> and raised $1.2M. I took a giant leap to tackle
-        language learning. Now I am working 24/7 on Coupling out of my
-        pocket.
-      </p>
-
-      <p style="text-align: center">
-        Contact me at <a href="mailto: kevin@learncoupling.com">kevin@learncoupling.com</a>
+        Hey! I’m <a href="https://twitter.com/kevopuff">Kevin</a>, a developer
+        and designer. I’ve been learning Chinese with the help of my wife for
+        years. I started Coupling to help myself and other couples who have
+        tried to learn each other's languages
       </p>
     </div>
     {% include "./svg/wave.svg" %}
@@ -225,10 +156,10 @@
       <a href="https://twitter.com/learncoupling" data-twitter-track>
         {% include "./svg/twitter.svg" %}
       </a>
-      <!--
-      <a href="https://facebook.com/learncoupling" data-fb-track>
-        {% include "./svg/facebook.svg" %}
+      <a href="https://coupling.substack.com/">
+        <i class="fal fa-newspaper"></i>
       </a>
+      <!--
       <a href="https://instagram.com/learncoupling" data-instagram-track>
         {% include "./svg/instagram.svg" %}
       </a>

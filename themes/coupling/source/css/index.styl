@@ -55,6 +55,8 @@ h1, h2, h3
 h3
   font-size 28px
   line-height 42px
+  +mobile()
+    margin-top 0
 
 button,
 .button,
@@ -68,6 +70,7 @@ input[type="submit"]
   cursor pointer
   display inline-block
   font-size 18px
+  margin-top 30px
   max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
@@ -116,6 +119,7 @@ input[type="text"]
   align-items center
   display flex
   justify-content center
+  margin-bottom 30px
 
   .wordmark
     color $yellow
@@ -149,11 +153,15 @@ ul.bulletPoints
     +media1200()
       margin 15px 0
     i
-      color $white
-      font-size 34px
-      margin-right 40px
+      color $text
+      font-size 24px
       textShadow()
-      width 30px
+      margin-right 30px
+      min-width 30px
+      +desktop()
+        font-size 34px
+        margin-right 40px
+        width 30px
 
 #container
   height 100%
@@ -189,13 +197,16 @@ section
     display flex
     flex-direction column
     img
+      margin-bottom 10px
       max-width 200px
+      +mobile()
+        max-height 240px
     > div
       display flex
       flex-direction column
-      +media1200()
-        > p:first-child
-          font-weight bold
+      > p:first-child
+        font-size 22px
+        font-weight bold
     +media1200()
       align-items flex-start 
       display flex
@@ -257,10 +268,10 @@ section.hero
 
     &.heroImgMobile
       display inline-block
-      margin-bottom -20px
-      margin-top 20px
+      margin-bottom 0
+      max-height 400px
       max-width 500px
-      transform scale(1.1)
+      transform scale(1)
       width 100%
       +media1200()
         display none
@@ -281,26 +292,12 @@ section.hero
     text-align center
     +media1200()
       font-size 26px
-      margin 10px 0 30px 0
-
-  .challenge.button
-    background $yellow
-    display inline-block
-    height auto
-    font-weight 400
-    margin-top 10px
-    i
-      margin-right 5px
-
-  input,
-  button
-    width 100%
-
-  button
-    font-weight bold
-    &[disabled]
-      background $green
-      box-shadow none
+      margin 25px 0 35px 0
+  
+  .ctaButton
+    margin-top 30px
+    +media1200()
+      margin-top 0 
 
 section.problem
   sectionYellow()
@@ -363,7 +360,7 @@ section.flashcard
   z-index 5
 
 section.coach
-  sectionPurple()
+  sectionRed()
   z-index 4
 
 section.language
@@ -371,11 +368,11 @@ section.language
   z-index 3
 
 section.subscribe
-  sectionBlue()
+  sectionPurple()
   padding-bottom 20px
   z-index 2
-  button
-    background $purple
+  .button
+    background $blue
   .pourImage
     gradient($red, lighten($red, 20%))
     border-radius 300px
@@ -439,9 +436,11 @@ section.blogSection
       text-overflow ellipsis
     h3
       color $white
-      font-size 18px
+      font-size 16px
       line-height 1.5
       margin 0
+      +desktop()
+        font-size 18px
     a
       text-shadow none
      img
@@ -468,8 +467,6 @@ section.blogSection
       transform scale(1)
       transition all .15s
       width 320px
-      +media1200()
-        height 240px
       &:hover .blogOverlay
         background $red
     .blogOverlay
@@ -493,6 +490,8 @@ section.blogSection
 section.about
   sectionYellow()
   z-index 0
+  p
+    text-align center
   img
     border-radius 200px
     height 200px
@@ -541,3 +540,5 @@ section.about
 .ctaButton
   padding-bottom 20px
   padding-top 20px
+  +desktop()
+    margin-top 0
