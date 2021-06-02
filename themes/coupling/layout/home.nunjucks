@@ -15,7 +15,7 @@
 
         <a class="button ctaButton" href="/app">
           <i class="fal fa-rocket"></i>
-          Take the Challenge Together 
+          Take the Challenge Together
         </a>
       </div>
 
@@ -49,8 +49,8 @@
             </li>
             <li>
               <i class="fal fa-sparkles"></i>
-              Automatic translations, audio, and breakdowns for any word you
-              want to add
+              Audio, dictionary lookups, translations, and breakdowns for any
+              word or phrase you want
             </li>
           </ul>
         </div>
@@ -78,7 +78,7 @@
             </li>
             <li>
               <i class="fal fa-thumbs-up"></i>
-              Get nagged when falling behind and get kudos when completing a goal 
+              Get nagged when falling behind and get kudos when completing a goal
             </li>
             <li>
               <i class="fal fa-envelope"></i>
@@ -103,7 +103,7 @@
         <form class="subscribeForm">
           <a class="button ctaButton" href="/app">
             <i class="fal fa-rocket"></i>
-            Get Started Together 
+            Get Started Together
           </a>
         </form>
       </div>
