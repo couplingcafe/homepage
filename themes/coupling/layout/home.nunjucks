@@ -33,21 +33,21 @@
 
         <div>
           <p>
-            A language journey that includes your partner
+            Create <a href="https://coupling.substack.com/p/update15" target="_blank">moments</a> with your partner through your language journey
           </p>
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-handshake"></i>
-              Multiplayer where partners can add audio, edits, notes, vocabulary
+              <i class="fal fa-sparkles"></i>
+              Learn through interactive mini-games with your partner 
             </li>
             <li>
-              <i class="fal fa-thumbs-up"></i>
-              Get nagged when falling behind and get kudos when completing a goal
+              <i class="fal fa-plus"></i>
+              Add audio recordings, notes, and vocabulary for each other
             </li>
             <li>
               <i class="fal fa-envelope"></i>
-              Weekly reports in your inboxes on learning progress and statistics
+              Receive progress reports in your inboxes with learning statistics
             </li>
           </ul>
         </div>
@@ -61,7 +61,7 @@
       <h3>A Powerful Language Learning App</h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/library.png">
+        <img src="/assets/img/review.png">
 
         <div>
           <p>
@@ -72,17 +72,16 @@
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-chart-line"></i>
-              The more you learn a word, the less you have to review it
+              Spend less time reviewing a word the more you learn it
             </li>
             <li>
               <i class="fal fa-books"></i>
-              Pull flashcards from a content library of starter decks and
+              Collect flashcards from our library of starter decks and
               booster packs
             </li>
             <li>
               <i class="fal fa-sparkles"></i>
-              Audio, dictionary lookups, translations, and breakdowns for any
-              word or phrase you want
+              Get audio, lookups, translations, and breakdowns for any word or phrase 
             </li>
           </ul>
         </div>
@@ -139,7 +138,7 @@
     <div class="sectionInner">
       <h3>About Me</h3>
 
-      <img src="/assets/img/me.jpg">
+      <img src="/assets/img/us.jpg">
 
       <p>
         Hey! I’m <a href="https://twitter.com/kevopuff">Kevin</a>, a developer
