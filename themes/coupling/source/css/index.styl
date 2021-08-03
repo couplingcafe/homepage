@@ -258,13 +258,16 @@ section.hero
   img.hero
     &.heroImgDesktop
       display none
-      height 600px
+      height 500px
       max-width 100%
-      margin-left -50px
       margin-right -50px
       margin-bottom -40px
+      position relative
+      right 60px
       +media1200()
         display inline-block
+      +media1600()
+        right 0
 
     &.heroImgMobile
       display inline-block
@@ -356,12 +359,12 @@ section.problem
         span
           font-size 30px
 
-section.flashcard
-  sectionBlue()
+section.coach
+  sectionYellow()
   z-index 5
 
-section.coach
-  sectionRed()
+section.flashcard
+  sectionBlue()
   z-index 4
 
 section.language
@@ -399,6 +402,7 @@ section.blogSection
     flex-wrap wrap
     justify-content center
     margin-top 0
+    max-width 1024px
     width 90%
     li
       align-items center
@@ -427,19 +431,26 @@ section.blogSection
           bottom 50px
           transform scaleX(2.285) scaleY(0.5) rotate(180deg)
     p
-      color $white
+      color $text
       font-size 16px
       line-height 1.5
       margin 0
       max-width 90%
-      white-space nowrap
       overflow hidden
       text-overflow ellipsis
+      text-shadow none
+      white-space nowrap
     h3
-      color $white
+      color $text
       font-size 16px
+      font-weight normal
       line-height 1.5
       margin 0
+      max-width 80%
+      overflow hidden
+      text-overflow ellipsis
+      text-shadow none
+      white-space nowrap
       +desktop()
         font-size 18px
     a

@@ -24,6 +24,38 @@
     {% include "./svg/wave.svg" %}
   </section>
 
+  <section class="coach">
+    <div class="sectionInner">
+      <h3>A Partner By Your Side</h3>
+
+      <div class="sectionInnerColumns reverse">
+        <img src="/assets/img/pastMoments.png">
+
+        <div>
+          <p>
+            A language journey that includes your partner
+          </p>
+
+          <ul class="bulletPoints">
+            <li>
+              <i class="fal fa-handshake"></i>
+              Multiplayer where partners can add audio, edits, notes, vocabulary
+            </li>
+            <li>
+              <i class="fal fa-thumbs-up"></i>
+              Get nagged when falling behind and get kudos when completing a goal
+            </li>
+            <li>
+              <i class="fal fa-envelope"></i>
+              Weekly reports in your inboxes on learning progress and statistics
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% include "./svg/wave.svg" %}
+  </section>
+
   <section class="flashcard">
     <div class="sectionInner">
       <h3>A Powerful Language Learning App</h3>
@@ -51,38 +83,6 @@
               <i class="fal fa-sparkles"></i>
               Audio, dictionary lookups, translations, and breakdowns for any
               word or phrase you want
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    {% include "./svg/wave.svg" %}
-  </section>
-
-  <section class="coach">
-    <div class="sectionInner">
-      <h3>A Partner By Your Side</h3>
-
-      <div class="sectionInnerColumns reverse">
-        <img src="/assets/img/challenges.png">
-
-        <div>
-          <p>
-            A language journey that includes your partner
-          </p>
-
-          <ul class="bulletPoints">
-            <li>
-              <i class="fal fa-handshake"></i>
-              Multiplayer where partners can add audio, edits, notes, vocabulary
-            </li>
-            <li>
-              <i class="fal fa-thumbs-up"></i>
-              Get nagged when falling behind and get kudos when completing a goal
-            </li>
-            <li>
-              <i class="fal fa-envelope"></i>
-              Weekly reports in your inboxes on learning progress and statistics
             </li>
           </ul>
         </div>
