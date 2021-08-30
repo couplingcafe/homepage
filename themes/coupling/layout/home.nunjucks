@@ -15,7 +15,7 @@
 
         <a class="button ctaButton" href="/app">
           <i class="fal fa-rocket"></i>
-          Open Coupling in Your Browser 
+          Open Coupling in Your Browser
         </a>
       </div>
 
@@ -39,7 +39,7 @@
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-sparkles"></i>
-              Learn through interactive mini-games with your partner 
+              Learn through interactive mini-games with your partner
             </li>
             <li>
               <i class="fal fa-plus"></i>
@@ -81,7 +81,7 @@
             </li>
             <li>
               <i class="fal fa-sparkles"></i>
-              Get audio, lookups, translations, and breakdowns for any word or phrase 
+              Get audio, lookups, translations, and breakdowns for any word or phrase
             </li>
           </ul>
         </div>
@@ -141,10 +141,12 @@
       <img src="/assets/img/us.jpg">
 
       <p>
-        Hey! I’m <a href="https://twitter.com/kevopuff">Kevin</a>, a developer
-        and designer. I’ve been learning Chinese with the help of my wife for
-        years. I started Coupling to help myself and other couples who have
-        tried to learn each other's languages
+        Hey! We're <a href="https://twitter.com/kevopuff">Kevin</a> and
+        <a href="https://puffygang.com">Heidi</a>, a husband and wife team. Kevin
+        has been learning Cantonese and Chinese for years on his own
+        despite having Heidi around him all the time. We started Coupling to
+        help ourselves and other couples to make it easy and fun to learn
+        languages from each other
       </p>
     </div>
     {% include "./svg/wave.svg" %}
