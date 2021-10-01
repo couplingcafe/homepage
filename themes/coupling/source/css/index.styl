@@ -34,7 +34,7 @@ ul
 
 b, p, li
   font-size 18px
-  line-height 2
+  line-height 1.5
   +media1200()
     font-size 20px
     line-height 36px
@@ -187,13 +187,13 @@ section
   flex-direction column
   flex-wrap wrap
   justify-content center
-  padding 0 20px
-  width calc(100% - 40px)
+  padding 0 10px
+  width calc(100% - 20px)
   h3 + p
     margin-top 5px
   > p
     text-align justify
-    
+
   img + div > p:first-child
     margin-top 0
     +desktop()
@@ -217,7 +217,7 @@ section
         +desktop()
           font-size 22px
     +media1200()
-      align-items flex-start 
+      align-items flex-start
       display flex
       flex-direction row
       justify-content center
@@ -263,7 +263,7 @@ section.hero
       margin 0 60px 0 20px
       position relative
       bottom 20px
-      
+
   .button
     line-height 1.5
 
@@ -286,7 +286,7 @@ section.hero
       margin-bottom 0
       margin-top 20px
       max-height 600px
-      width 100%
+      max-width 100%
       +media1200()
         display none
 
@@ -308,11 +308,13 @@ section.hero
     +media1200()
       font-size 26px
       margin 25px 0 35px 0
-  
+
   .ctaButton
+    background $green
     margin-top 30px
+    padding 15px
     +media1200()
-      margin-top 0 
+      margin-top 0
 
 section.problem
   sectionYellow()
@@ -332,7 +334,7 @@ section.problem
     display flex
     justify-content center
     margin-top 20px
-    
+
     li
       align-items center
       display flex
@@ -354,10 +356,10 @@ section.problem
       p
         max-width 300px
         text-align center
-      
+
       div
         align-items center
-        border 1px solid $shadow 
+        border 1px solid $shadow
         border-radius 200px
         boxShadow()
         display flex
@@ -402,7 +404,7 @@ section.subscribe
       left 8px
       position relative
       max-width 150px
-  .sectionInnerColumns 
+  .sectionInnerColumns
     align-items center
 
 section.blogSection
@@ -518,6 +520,7 @@ section.about
   sectionYellow()
   z-index 0
   p
+    line-height 2
     text-align center
   img
     border-radius 200px
@@ -563,9 +566,3 @@ section.about
     margin 0 auto
     padding 10px 0
     width 100%
-
-.ctaButton
-  padding-bottom 20px
-  padding-top 20px
-  +desktop()
-    margin-top 0
