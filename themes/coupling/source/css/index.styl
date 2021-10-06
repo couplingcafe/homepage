@@ -240,6 +240,11 @@ section
     height 50px
     transform scaleX(10) translateY(45px)
 
+.button.ctaButton
+  background $green
+  &:hover
+    background $greenend
+
 section.hero
   sectionPurple()
   padding-top 20px
@@ -312,9 +317,22 @@ section.hero
   .ctaButton
     background $green
     margin-top 30px
-    padding 15px
+    padding 15px 20px
     +media1200()
       margin-top 0
+      padding 10px 25px
+    p
+      margin 0
+      font-size 18px
+      text-align center
+    p.tooltip
+      font-size 14px
+      font-weight normal
+      line-height 1
+      margin 5px 0 5px 0
+      color $gray
+      +media1200()
+        margin 0 0 5px 0
 
 section.problem
   sectionYellow()
@@ -392,8 +410,6 @@ section.subscribe
   sectionPurple()
   padding-bottom 20px
   z-index 2
-  .button
-    background $blue
   .pourImage
     gradient($red, lighten($red, 20%))
     border-radius 300px

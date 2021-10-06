@@ -14,8 +14,11 @@
         <p class="subtitle">Learn a language with your native speaking partner</p>
 
         <a class="button ctaButton" href="/app">
-          <i class="fal fa-rocket"></i>
-          Launch Coupling in Your Browser
+          <p>
+            <i class="fal fa-rocket"></i>
+            <span>Launch Coupling in Your Browser</span>
+          </p>
+          <p class="tooltip">Over 100 Languages Supported</p>
         </a>
       </div>
 
@@ -130,6 +133,11 @@
         {% endif %}
       {% endfor %}
       </ul>
+
+      <a class="button" href="https://coupling.substack.com" target="_blank">
+        <i class="fal fa-newspaper"></i>
+        Subscribe to the Newsletter
+      </a>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
