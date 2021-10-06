@@ -56,4 +56,10 @@
   <script src="/build.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet">
   <link href="/assets/css/fontawesome.css" rel="stylesheet">
+
+  <!-- Prefetch -->
+  <script src="/app/assets/build/vue.js" defer></script>
+  <script src="/app/assets/build/dexie.js" defer></script>
+  <script src="/app/assets/build/multiplayer.js" defer></script>
+  <script src="/app/assets/build/build.js" defer></script>
 </body>
