@@ -17,19 +17,19 @@ function initAnalytics () {
         window.requestAnimationFrame(() => {
           const percent = this.scrollY / (document.body.clientHeight - window.innerHeight);
           if (percent >= 0.25 && !scrollTracked[0]) {
-            analytics.track('Home Page 25% Scroll Depth');
+            analytics.track('Home Page: 25% Scroll Depth');
             scrollTracked[0] = true;
           }
           if (percent >= 0.5 && !scrollTracked[1]) {
-            analytics.track('Home Page 50% Scroll Depth');
+            analytics.track('Home Page: 50% Scroll Depth');
             scrollTracked[1] = true;
           }
           if (percent >= 0.75 && !scrollTracked[2]) {
-            analytics.track('Home Page 75% Scroll Depth');
+            analytics.track('Home Page: 75% Scroll Depth');
             scrollTracked[2] = true;
           }
           if (percent >= 0.95 && !scrollTracked[3]) {
-            analytics.track('Home Page 100% Scroll Depth');
+            analytics.track('Home Page: 100% Scroll Depth');
             scrollTracked[3] = true;
           }
           ticking = false;
@@ -42,13 +42,13 @@ function initAnalytics () {
   $$('form.subscribe button').forEach(btn => {
     btn.addEventListener('click', () => {
       console.log('Subscribe button click.');
-      analytics.track('Home Page Subscribe');
+      analytics.track('Home Page: Subscribe');
     });
   });
 
   $$('a').forEach(link => {
     link.addEventListener('click', () => {
-      analytics.track('Home Page Link Click', {
+      analytics.track('Home Page: Link Click', {
         href: link.getAttribute('href'),
         text: link.innerText
       });
