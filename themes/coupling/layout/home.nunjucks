@@ -102,7 +102,7 @@
           <img src="/assets/img/pour.png">
         </div>
 
-        <form class="subscribeForm">
+        <form>
           <a class="button ctaButton" href="/app">
             <i class="fal fa-rocket"></i>
             Get Started Together
