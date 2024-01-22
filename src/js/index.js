@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initAnalytics () {
   if (window.location.host.startsWith('localhost')) { return; }
-
+ 
+  /*
   amp().logEvent('Landing Page View', {
     page: document.body.dataset.type || document.title
   });
+  */
 
   let ticking = false;
   const scrollTracked = [];
@@ -21,19 +23,19 @@ function initAnalytics () {
         const b = document.body;
         const percent = this.scrollY / (document.body.clientHeight - window.innerHeight);
         if (percent >= 0.25 && !scrollTracked[0]) {
-          amp().logEvent('Landing Page 25% Scroll Depth');
+          // amp().logEvent('Landing Page 25% Scroll Depth');
           scrollTracked[0] = true;
         }
         if (percent >= 0.5 && !scrollTracked[1]) {
-          amp().logEvent('Landing Page 50% Scroll Depth');
+          // amp().logEvent('Landing Page 50% Scroll Depth');
           scrollTracked[1] = true;
         }
         if (percent >= 0.75 && !scrollTracked[2]) {
-          amp().logEvent('Landing Page 75% Scroll Depth');
+          // amp().logEvent('Landing Page 75% Scroll Depth');
           scrollTracked[2] = true;
         }
         if (percent >= 0.95 && !scrollTracked[3]) {
-          amp().logEvent('Landing Page 100% Scroll Depth');
+          // amp().logEvent('Landing Page 100% Scroll Depth');
           scrollTracked[3] = true;
         }
         ticking = false;
@@ -45,16 +47,18 @@ function initAnalytics () {
   $$('form.subscribe button').forEach(btn => {
     btn.addEventListener('click', () => {
       console.log('Subscribe button click.');
-      amp().logEvent('Landing Page Subscribe');
+      // amp().logEvent('Landing Page Subscribe');
     });
   });
 
   $$('a').forEach(link => {
     link.addEventListener('click', () => {
+      /*
       amp().logEvent('Landing Page Link Click', {
         href: link.getAttribute('href'),
         text: link.innerText
       });
+      */
     });
   });
 }
@@ -183,6 +187,6 @@ function click (q, fn) {
   }
 }
 
-function amp () { return amplitude.getInstance(); }
+// function amp () { return amplitude.getInstance(); }
 function $ (q) { return document.querySelector(q); }
 function $$ (q) { return Array.from(document.querySelectorAll(q)); }
