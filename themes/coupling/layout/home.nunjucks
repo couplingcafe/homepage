@@ -9,20 +9,22 @@
 
         <h2 class="title">The Language Learning App for Couples</h2>
 
-        <img class="hero heroImgMobile" src="/assets/img/phones.png">
+        <img class="hero heroImgMobile" src="/assets/img/screenshots/hero.png">
 
-        <p class="subtitle">Learn a language with your native speaking partner</p>
+        <p class="subtitle">Words That Stay &mdash; Bonds That Grow</p>
 
-        <a class="button ctaButton" href="/app">
-          <p>
-            <i class="fal fa-rocket"></i>
-            <span>Launch Coupling in Your Browser</span>
-          </p>
-          <p class="tooltip">Over 100 Languages Supported</p>
-        </a>
+        <div class="appStoreButtons">
+          <a class="apple" href="https://apps.apple.com/us/app/coupling-language-together/id6450518454">
+            <img src="/assets/img/social/appStore.png">
+          </a>
+          <a class="android">
+            <img src="/assets/img/social/googlePlay.png">
+            <p class="unreleased">Coming This Week</p>
+          </a>
+        </div>
       </div>
 
-      <img class="hero heroImgDesktop" src="/assets/img/phones.png?v=2">
+      <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero.png">
     </div>
     {% include "./svg/wave.svg" %}
   </section>
@@ -32,7 +34,7 @@
       <h3>A Partner By Your Side</h3>
 
       <div class="sectionInnerColumns reverse">
-        <img src="/assets/img/pastMoments.png">
+        <img src="/assets/img/screenshots/Packs.png">
 
         <div>
           <p>
@@ -64,7 +66,7 @@
       <h3>A Powerful Language Learning App</h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/review.png">
+        <img src="/assets/img/screenshots/Study.png">
 
         <div>
           <p>
@@ -93,6 +95,7 @@
     {% include "./svg/wave.svg" %}
   </section>
 
+  <!--
   <section class="subscribe">
     <div class="sectionInner">
       <h3>Over 100 Languages Supported</h3>
@@ -112,6 +115,7 @@
     </div>
     {% include "./svg/wave.svg" %}
   </section>
+  -->
 
   <section class="blogSection">
     <div class="sectionInner">
@@ -168,11 +172,6 @@
       <a href="https://coupling.substack.com/">
         <i class="fal fa-newspaper"></i>
       </a>
-      <!--
-      <a href="https://instagram.com/learncoupling" data-instagram-track>
-        {% include "./svg/instagram.svg" %}
-      </a>
-      -->
       <a href="https://learncoupling.com/discord">
         {% include "./svg/discord.svg" %}
       </a>

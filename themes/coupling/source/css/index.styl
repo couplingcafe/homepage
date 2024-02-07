@@ -131,7 +131,7 @@ input[type="text"]
     margin-bottom 0
     margin-right 20px
     margin-top 0
-    text-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+    text-shadow 0 2px 4px rgba(20, 0, 20, 0.25)
     text-transform uppercase
     +media1200()
       font-size 60px
@@ -302,7 +302,7 @@ section.hero
     font-size 36px
     margin-top 20px
     margin-bottom 15px
-    text-shadow 0px 2px 2px rgba(0, 0, 0, 0.2)
+    text-shadow 0px 2px 2px rgba(0, 0, 0, 0.1)
     +media1200()
       font-size 42px
       margin-top 20px
@@ -316,25 +316,30 @@ section.hero
       font-size 26px
       margin 25px 0 35px 0
 
-  .ctaButton
-    background $green
-    margin-top 30px
-    padding 15px 20px
-    +media1200()
-      margin-top 0
-      padding 10px 25px
-    p
-      margin 0
-      font-size 18px
-      text-align center
-    p.tooltip
-      font-size 14px
-      font-weight normal
-      line-height 1
-      margin 5px 0 5px 0
-      color $gray
-      +media1200()
-        margin 0 0 5px 0
+  .appStoreButtons
+    align-items center
+    display flex
+    flex-direction row
+    justify-content center 
+    gap 20px
+
+    a 
+      display inline-block
+      position relative
+      &.android
+        opacity 0.5
+      img 
+        height auto
+        width 180px
+      .unreleased
+        position absolute
+        font-size 12px
+        left 0
+        right 0
+        margin 0 auto
+        text-align center
+        font-style italic
+        bottom -30px 
 
 section.problem
   sectionYellow()
