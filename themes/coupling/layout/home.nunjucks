@@ -22,6 +22,8 @@
             <p class="unreleased">Coming This Week</p>
           </a>
         </div>
+
+        <span class="langSupport">Supports every language</p>
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero.png">
@@ -31,28 +33,28 @@
 
   <section class="coach">
     <div class="sectionInner">
-      <h3>A Partner By Your Side</h3>
+      <h3>Learn Together, Grow Together</h3>
 
       <div class="sectionInnerColumns reverse">
         <img src="/assets/img/screenshots/Packs.png">
 
         <div>
           <p>
-            Create <a href="https://coupling.substack.com/p/update15" target="_blank">moments</a> with your partner through your language journey
+            Make your language journey a shared adventure
           </p>
 
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-sparkles"></i>
-              Learn through interactive mini-games with your partner
+              Tailored lessons lovingly handcrafted by your partner
             </li>
             <li>
               <i class="fal fa-plus"></i>
-              Add audio recordings, notes, and vocabulary for each other
+              Ditch the solo grind, ignite your motivation with your partner's support 
             </li>
             <li>
               <i class="fal fa-envelope"></i>
-              Receive progress reports in your inboxes with learning statistics
+              Avoid outdated phrases, talk like a local
             </li>
           </ul>
         </div>
@@ -63,30 +65,28 @@
 
   <section class="flashcard">
     <div class="sectionInner">
-      <h3>A Powerful Language Learning App</h3>
+      <h3>A Proven Language Learning System</h3>
 
       <div class="sectionInnerColumns">
         <img src="/assets/img/screenshots/Study.png">
 
         <div>
           <p>
-            Lock words into memory with <a href="https://ncase.me/remember/">spaced
-            repetition flashcards</a>
+            Never forget a word with our scientifically proven <a href="https://ncase.me/remember/">spaced repetition system</a>
           </p>
 
           <ul class="bulletPoints">
             <li>
               <i class="fal fa-chart-line"></i>
-              Spend less time reviewing a word the more you learn it
+              Boost memory by reviewing words right when you're about to forget them
             </li>
             <li>
               <i class="fal fa-books"></i>
-              Collect flashcards from our library of starter decks and
-              booster packs
+              The more you master a word, the less time you need to spend on it
             </li>
             <li>
               <i class="fal fa-sparkles"></i>
-              Get audio, lookups, translations, and breakdowns for any word or phrase
+              Access audio, notes, lookups, breakdowns for any word or phrase
             </li>
           </ul>
         </div>
