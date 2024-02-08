@@ -23,7 +23,10 @@
           </a>
         </div>
 
-        <span class="langSupport">Supports every language</p>
+        <span class="langSupport">
+          <i class="fad fa-earth-americas"></i>
+          Supports every language
+        </p>
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero.png">
@@ -31,30 +34,33 @@
     {% include "./svg/wave.svg" %}
   </section>
 
-  <section class="coach">
+  <section class="partner">
     <div class="sectionInner">
-      <h3>Learn Together, Grow Together</h3>
+      <h3>
+        <i class="fad fa-trees"></i>
+        Learn Together, Grow Together
+      </h3>
 
       <div class="sectionInnerColumns reverse">
         <img src="/assets/img/screenshots/Packs.png">
 
         <div>
-          <p>
+          <p class="sectionSubtitle">
             Make your language journey a shared adventure
           </p>
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-sparkles"></i>
+              <i class="fad fa-hand-holding-heart"></i>
               Tailored lessons lovingly handcrafted by your partner
             </li>
             <li>
-              <i class="fal fa-plus"></i>
-              Ditch the solo grind, ignite your motivation with your partner's support 
+              <i class="fad fa-people-arrows"></i>
+              Ditch the solo grind, fuel your motivation with your partner's support 
             </li>
             <li>
-              <i class="fal fa-envelope"></i>
-              Avoid outdated phrases, talk like a local
+              <i class="fad fa-message-smile"></i>
+              Avoid outdated phrases. Talk like a local native 
             </li>
           </ul>
         </div>
@@ -65,27 +71,30 @@
 
   <section class="flashcard">
     <div class="sectionInner">
-      <h3>A Proven Language Learning System</h3>
+      <h3>
+        <i class="fad fa-head-side-brain"></i>
+        A Proven Language Learning System
+      </h3>
 
       <div class="sectionInnerColumns">
         <img src="/assets/img/screenshots/Study.png">
 
         <div>
-          <p>
+          <p class="sectionSubtitle">
             Never forget a word with our scientifically proven <a href="https://ncase.me/remember/">spaced repetition system</a>
           </p>
 
           <ul class="bulletPoints">
             <li>
-              <i class="fal fa-chart-line"></i>
+              <i class="fad fa-timer"></i>
               Boost memory by reviewing words right when you're about to forget them
             </li>
             <li>
-              <i class="fal fa-books"></i>
+              <i class="fad fa-chart-line"></i>
               The more you master a word, the less time you need to spend on it
             </li>
             <li>
-              <i class="fal fa-sparkles"></i>
+              <i class="fad fa-books"></i>
               Access audio, notes, lookups, breakdowns for any word or phrase
             </li>
           </ul>
@@ -94,28 +103,6 @@
     </div>
     {% include "./svg/wave.svg" %}
   </section>
-
-  <!--
-  <section class="subscribe">
-    <div class="sectionInner">
-      <h3>Over 100 Languages Supported</h3>
-
-      <div class="sectionInnerColumns">
-        <div class="pourImage">
-          <img src="/assets/img/pour.png">
-        </div>
-
-        <form>
-          <a class="button ctaButton" href="/app">
-            <i class="fal fa-rocket"></i>
-            Get Started Together
-          </a>
-        </form>
-      </div>
-    </div>
-    {% include "./svg/wave.svg" %}
-  </section>
-  -->
 
   <section class="blogSection">
     <div class="sectionInner">
@@ -139,7 +126,7 @@
       </ul>
 
       <a class="button" href="https://coupling.substack.com" target="_blank">
-        <i class="fal fa-newspaper"></i>
+        <i class="fad fa-newspaper"></i>
         Subscribe to the Newsletter
       </a>
     </div>
@@ -170,7 +157,7 @@
         {% include "./svg/twitter.svg" %}
       </a>
       <a href="https://coupling.substack.com/">
-        <i class="fal fa-newspaper"></i>
+        <i class="fad fa-newspaper"></i>
       </a>
       <a href="https://learncoupling.com/discord">
         {% include "./svg/discord.svg" %}

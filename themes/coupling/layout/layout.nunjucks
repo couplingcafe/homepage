@@ -30,5 +30,6 @@
 
   <script src="/build.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@500;600&family=Titan+One&display=swap" rel="stylesheet">
-  <link href="/assets/css/fontawesome.css" rel="stylesheet">
+  <link href="/assets/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/assets/css/duotone.min.css" rel="stylesheet">
 </body>
