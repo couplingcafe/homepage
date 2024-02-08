@@ -1,4 +1,4 @@
 ---
-title: Learn Your Loved One's Language
+title: Language Together
 layout: home
 ---

@@ -4,10 +4,8 @@
 
 # Site
 name: Coupling
-title: Language Learning With Loved Ones
-description: "The language learning app for couples (e.g., Chinese, Spanish, French). Plug your partner into your language journey and bring it life"
-
-amplitude: 5e846ef00ca34c07a9270b34585a7f68
+title: Language Together
+description: "The language learning app for couples (e.g., Chinese, Spanish, French). Learn together, grow together."
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -77,11 +75,11 @@ marked:
   breaks: false
   smartLists: true
   smartypants: true
-  modifyAnchors: 1   # Lowercased anchors.
+  modifyAnchors: 1 # Lowercased anchors.
 
 prism_plugin:
-  mode: 'preprocess'
-  theme: 'tomorrow'
+  mode: "preprocess"
+  theme: "tomorrow"
   line_number: false
 
 all_minifier: false
