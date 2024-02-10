@@ -17,9 +17,8 @@
           <a class="apple" href="https://apps.apple.com/us/app/coupling-language-together/id6450518454">
             <img src="/assets/img/social/appStore.png">
           </a>
-          <a class="android">
+          <a class="android" href="https://play.google.com/store/apps/details?id=com.coupling.coupling">
             <img src="/assets/img/social/googlePlay.png">
-            <p class="unreleased">Coming This Week</p>
           </a>
         </div>
 
