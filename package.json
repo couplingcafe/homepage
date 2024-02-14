@@ -5,7 +5,7 @@
   "scripts": {
     "build": "NODE_ENV=production hexo generate && NODE_ENV=production webpack",
     "clean": "hexo clean",
-    "deploy": "npm run build && ghpages -p public -r git@github.com:learncoupling/learncoupling.github.io",
+    "deploy": "npm run build && ghpages -p public -r git@github.com:couplingcafe/couplingcafe.github.io",
     "start": "concurrently \"hexo generate --draft --watch\" \"live-server public\" \"webpack --watch\"",
     "substack": "node substack.js && git add src && git commit -m 'sync substack' && git push origin master && npm run deploy"
   },
