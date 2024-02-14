@@ -22,10 +22,18 @@
           </a>
         </div>
 
+        <!--
         <span class="langSupport">
           <i class="fad fa-earth-americas"></i>
           Supports every language
         </p>
+        -->
+
+        <a class="button green" href="https://coupling.substack.com/p/coupling-language-together-now-available">
+          <i class="fad fa-leaf-heart"></i>
+          Coupling's Valentine's Day Release!
+        </a>
+
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero.png">
