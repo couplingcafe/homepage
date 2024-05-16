@@ -130,7 +130,7 @@
           <a class="blogImage" data-blog-track href="{{ blog.link }}">
             {% if blog.image %}<img src="{{ blog.image }}">{% endif %}
             <div class="blogOverlay">
-              <h3 class="blogTitle">{{ blog.title.slice(0, 28) }}</h3>
+              <h3 class="blogTitle">{{ blog.title }}</h3>
               <p class="blogSubtitle">{{ blog.subtitle }}</p>
             </div>
           </a>

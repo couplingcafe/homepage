@@ -12,7 +12,10 @@ async function get () {
     });
   });
 
-  const out = data.rss.channel[0].item.map(blog => {
+  const out = data.rss.channel[0].item.filter(blog => {
+    const date = moment(blog.pubDate[0]).format('YYYY MM DD');
+    return date >= '2024 01 01';
+  }).map(blog => {
     blog.title = blog.title[0];
     if (blog.title.indexOf(':') !== -1) {
       blog.title = blog.title.split(':')[1];
@@ -31,7 +34,7 @@ async function get () {
     return blog;
   });
 
-  fs.writeFileSync('./src/_data/blog.json', JSON.stringify(data.rss.channel[0].item));
+  fs.writeFileSync('./src/_data/blog.json', JSON.stringify(out));
 }
 
 get();

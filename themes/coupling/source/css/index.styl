@@ -37,12 +37,12 @@ b, p, li
   font-size 16px
   line-height 1.5
   margin 0
+  max-width 768px
   +media600()
     font-size 18px
   +media1200()
     font-size 20px
     line-height 36px
-    max-width 800px
     text-align justify
 
 a
@@ -80,13 +80,15 @@ input[type="submit"]
   border 0
   border-radius 5px
   boxShadow()
+  font-family 'Fredoka One'
+  font-weight 400 
   color $text
   cursor pointer
   display inline-block
-  font-size 16px
+  font-size 18px
   max-width 768px
   inputHover()
-  padding 15px 30px 15px 30px
+  padding 15px 25px 15px 25px
   text-decoration none
   transform none
   vertical-align middle
@@ -129,9 +131,8 @@ input[type="text"]
   vertical-align middle
 
 ul.bulletPoints
+  flexCenter(column)
   align-items flex-start
-  display flex
-  flex-direction column
   margin-top 0
   li
     align-items center
@@ -164,8 +165,9 @@ section
   text-align center
   width 100%
   +media600()
-    padding-top 80px
+    padding-top 60px
   +media1200()
+    padding-top 80px
     &:not(.hero)
       padding-bottom 20px
 
@@ -173,8 +175,7 @@ section
   flexCenter(column)
   flex-wrap wrap
   gap 20px
-  padding 0 10px
-  padding-top 20px
+  padding 20px 0
   width calc(100% - 20px)
   h3 + p
     margin-top 5px
@@ -182,7 +183,7 @@ section
     text-align justify
   +media600()
     gap 30px
-    padding-top 30px
+    padding 30px 0
 
   img + div > p:first-child
     margin-top 0
@@ -213,10 +214,8 @@ section
         +desktop()
           font-size 22px
     +media1200()
+      flexCenter()
       align-items flex-start
-      display flex
-      flex-direction row
-      justify-content center
       flex-wrap nowrap
       > :first-child
         margin-right 50px
@@ -249,9 +248,7 @@ section
   text-align center
 
   > div
-    display flex
-    flex-direction row
-    justify-content center
+    flexCenter()
     padding 80px 0 30px 0
     width 100%
     z-index -1
@@ -266,9 +263,6 @@ section
       fill $white
       height 40px
       width 40px
-      transition fill .2s
-      &:hover
-        fill $blue
 
   .privacy
     color $text
