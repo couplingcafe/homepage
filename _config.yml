@@ -9,7 +9,7 @@ description: "The language learning app for couples (e.g., Chinese, Spanish, Fre
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://learncoupling.com
+url: https://couplingcafe.com
 root: /
 permalink: :id/
 permalink_defaults:
@@ -64,7 +64,7 @@ theme: coupling
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:learncoupling/learncoupling.github.io.git
+  repository: git@github.com:couplingcafe/couplingcafe.github.io.git
   branch: gh-pages
 
 marked:

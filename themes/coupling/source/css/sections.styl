@@ -1,21 +1,20 @@
 @import 'settings'
 
 .header
-  align-items center
-  display flex
-  justify-content center
-  margin-bottom 15px
+  flexCenter()
+  gap 15px
   +media600()
-    margin-bottom 30px
+    gap 15px
+  +media1200()
+    gap 5px
 
   .wordmark
     color $yellow
-    font-size 28px
+    font-size 38px
     font-family 'Titan One'
-    margin-bottom 0
-    margin-right 20px
-    margin-top 0
-    text-shadow 0 2px 4px rgba(20, 0, 20, 0.25)
+    font-weight normal
+    margin 0
+    text-shadow 0 2px 2px rgba(20, 0, 20, 0.15)
     text-transform uppercase
     +media600()
       font-size 42px
@@ -25,6 +24,7 @@
       margin-right 30px
 
   .logo
+    object-fit contain
     max-width 48px
     +media600()
       max-width 60px
@@ -34,12 +34,8 @@
 
 section.hero
   sectionPurple()
-  padding-top 10px 
+  padding-top 0
   z-index 20
-  +media600()
-    padding-top 20px
-  +media1200()
-    padding-top 0
 
   .sectionInner
     padding-bottom 20px
@@ -52,12 +48,18 @@ section.hero
       padding-top 100px
       width calc(100% - 60px)
 
-  .heroLeft
+  .heroContent
+    display flex
+    flex-direction column
     max-width 100%
+    gap 15px
+    +media600() 
+      gap 20px
     +media1200()
+      bottom 20px
       margin 0 100px 0 20px
       position relative
-      bottom 20px
+      gap 30px
 
   .button
     line-height 1.5
@@ -78,38 +80,31 @@ section.hero
 
     &.heroImgMobile
       display inline-block
-      margin-bottom 0
-      margin-top 20px
+      object-fit contain 
       max-height 400px
       max-width 100%
       +media600()
-        max-height 600px
+        max-height 500px
       +media1200()
         display none
 
   .title
     color $white
     font-size 24px
-    margin-bottom 0
-    text-shadow 0px 2px 2px rgba(0, 0, 0, 0.1)
+    text-shadow 0px 1px 1px rgba(0, 0, 0, 0.1)
     +media600()
       font-size 36px
-      margin-bottom 15px
-      margin-top 20px
     +media1200()
       font-size 42px
-      margin-top 20px
 
   .subtitle
     font-size 16px
-    margin 20px 0 30px 0
     max-width 100%
     text-align center
     +media600()
       font-size 22px
     +media1200()
       font-size 26px
-      margin 25px 0 35px 0
 
   .appStoreButtons
     align-items center
@@ -137,6 +132,18 @@ section.hero
         font-style italic
         +media1200()
           bottom -30px 
+
+  .additionalLinks
+    flexCenter(column)
+    gap 10px
+    padding-top 30px
+    +media1200()
+      flex-direction row 
+      padding-top 10px
+    a 
+      width 80%
+      +media1200()
+        width auto
 
   .langSupport
     color $gray
@@ -294,7 +301,6 @@ section.about
     border-radius 200px
     height 200px
     width 200px
-    margin-bottom 20px
     boxShadow()
   a
     color $black

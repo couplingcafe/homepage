@@ -8,6 +8,4 @@
       </ul>
     </div>
   </section>
-
-  {% include "includes/subscribe.html" %}
 </div>

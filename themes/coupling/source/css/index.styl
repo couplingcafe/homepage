@@ -36,6 +36,7 @@ ul
 b, p, li
   font-size 16px
   line-height 1.5
+  margin 0
   +media600()
     font-size 18px
   +media1200()
@@ -55,7 +56,8 @@ a
 h1, h2, h3
   color #3A303A
   font-family 'Fredoka One', sans-serif
-  textShadow()
+  font-weight normal
+  margin 0
   i
    display inline-block
    margin-right: 10px
@@ -82,7 +84,6 @@ input[type="submit"]
   cursor pointer
   display inline-block
   font-size 16px
-  margin-top 30px
   max-width 768px
   inputHover()
   padding 15px 30px 15px 30px
@@ -157,29 +158,31 @@ ul.bulletPoints
   width 100%
 
 section
-  align-items center
-  display flex
-  flex-direction column
+  flexCenter(column)
   position relative
-  padding-top 80px
+  padding-top 50px
   text-align center
   width 100%
+  +media600()
+    padding-top 80px
   +media1200()
     &:not(.hero)
       padding-bottom 20px
 
 .sectionInner
-  align-items center
-  display flex
-  flex-direction column
+  flexCenter(column)
   flex-wrap wrap
-  justify-content center
+  gap 20px
   padding 0 10px
+  padding-top 20px
   width calc(100% - 20px)
   h3 + p
     margin-top 5px
   > p
     text-align justify
+  +media600()
+    gap 30px
+    padding-top 30px
 
   img + div > p:first-child
     margin-top 0
@@ -187,9 +190,10 @@ section
       margin-top 22px
 
   .sectionInnerColumns
-    align-items center
-    display flex
-    flex-direction column
+    flexCenter(column)
+    gap 20px
+    +media600()
+      gap 30px
     img
       margin-bottom 10px
       max-width 320px
@@ -198,6 +202,9 @@ section
     > div
       display flex
       flex-direction column
+      gap 20px
+      +media600()
+        gap 30px
       .sectionSubtitle
         font-size 18px
         font-weight bold

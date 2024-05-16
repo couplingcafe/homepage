@@ -1,7 +1,7 @@
 <div id="container">
   <section class="hero">
     <div class="sectionInner">
-      <div class="heroLeft">
+      <div class="heroContent">
         <div class="header">
           <h1 class="wordmark">Coupling</h1>
           <img class="logo" src="/assets/img/logo.svg">
@@ -29,15 +29,22 @@
         </p>
         -->
 
-        <a class="button green" href="https://coupling.substack.com/p/coupling-language-together-now-available">
-          <i class="fad fa-leaf-heart"></i>
-          Coupling's Valentine's Day Release!
-        </a>
+        <div class="additionalLinks">
+          <a class="button green text-red" href="https://coupling.substack.com/p/coupling-language-together-now-available">
+            <i class="fad fa-leaf-heart"></i>
+            Coupling's Valentine's Day Release!
+          </a>
 
+          <a class="button blue" href="https://coupling.substack.com/p/a-complete-tour-of-coupling-cafe">
+            <i class="fad fa-flag-checkered"></i>
+            Complete Tour of the App
+          </a>
+        </div>
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero.png">
     </div>
+    
     {% include "./svg/wave.svg" %}
   </section>
 
@@ -160,13 +167,10 @@
 
   <div class="footer">
     <div>
-      <a href="https://twitter.com/learncoupling" data-twitter-track>
-        {% include "./svg/twitter.svg" %}
-      </a>
       <a href="https://coupling.substack.com/">
         <i class="fad fa-newspaper"></i>
       </a>
-      <a href="https://learncoupling.com/discord">
+      <a href="https://couplingcafe.com/discord">
         {% include "./svg/discord.svg" %}
       </a>
     </div>
