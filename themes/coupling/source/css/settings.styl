@@ -12,7 +12,7 @@ $primary=$purple
 $secondary=$blue
 $tertiary=$yellow
 $text=$black
-$shadow=rgba(0, 0, 0, 0.25)
+$shadow=rgba(0, 0, 0, 0.1)
 
 $darkblueend=lighten($darkblue, 10%)
 $blueend=#A8E3FF
@@ -31,7 +31,7 @@ absCenter()
   text-align center
 
 boxShadow()
-  box-shadow 0px 2px 2px $shadow
+  box-shadow 0px 1px 1px $shadow
 
 boxShadowFocus()
   box-shadow 0px 0 0 2px $primary
@@ -69,6 +69,10 @@ sectionYellow()
   gradient($yellow, $yellowend)
   wave($yellowend)
 
+sectionGreen()
+  gradient($green, $greenend)
+  wave($greenend)
+
 textShadow()
   text-shadow 0px 1px 1px rgba(0, 0, 0, 0.3)
 
@@ -99,18 +103,6 @@ media600() {
   }
 }
 
-media768() {
-  @media (min-width: 768px) {
-    {block}
-  }
-}
-
-media1024() {
-  @media (min-width: 1024px) {
-    {block}
-  }
-}
-
 media1200() {
   @media (min-width: 1200px) {
     {block}
@@ -119,24 +111,6 @@ media1200() {
 
 media1600() {
   @media (min-width: 1600px) {
-    {block}
-  }
-}
-
-media1920() {
-  @media (min-width: 1920px) {
-    {block}
-  }
-}
-
-mediaHeight600() {
-  @media (max-height: 600px) {
-    {block}
-  }
-}
-
-mediaLandscape() {
-  @media (orientation: landscape) and (max-height: 480px) {
     {block}
   }
 }

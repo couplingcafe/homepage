@@ -78,7 +78,7 @@ input[type="submit"]
   background $blue
   backface-visibility hidden
   border 0
-  border-radius 5px
+  border-radius 50px
   boxShadow()
   font-family 'Fredoka One'
   font-weight 400 
@@ -193,22 +193,25 @@ section
   .sectionInnerColumns
     flexCenter(column)
     gap 20px
-    +media600()
-      gap 30px
+    +media1200()
+      gap 40px
     img
+      object-fit contain
       margin-bottom 10px
-      max-width 320px
+      max-width 640px
+      max-height 640px
       +mobile()
         max-height 480px
     > div
       display flex
       flex-direction column
+      flex 1 
       gap 20px
       +media600()
         gap 30px
       .sectionSubtitle
+        font-family 'Fredoka One'
         font-size 18px
-        font-weight bold
         +media600()
           font-size 20px
         +desktop()
@@ -217,21 +220,17 @@ section
       flexCenter()
       align-items flex-start
       flex-wrap nowrap
-      > :first-child
-        margin-right 50px
-      &.reverse
-        flex-direction row-reverse
-        > :first-child
-          margin-right 0
-        > :last-child
-          margin-right 50px
+
+section:nth-child(odd) .sectionInnerColumns
+  +media1200()
+    flex-direction row-reverse
 
 .wave
   bottom 0
   position absolute
   transform scaleX(5) translateY(35px)
   height 40px
-  +media768()
+  +media600()
     height 50px
     transform scaleX(10) translateY(45px)
   +media1200()

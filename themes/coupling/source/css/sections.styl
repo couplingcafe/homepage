@@ -101,10 +101,12 @@ section.hero
     font-size 16px
     max-width 100%
     text-align center
+    opacity 0.75 !important
     +media600()
       font-size 22px
     +media1200()
-      font-size 26px
+      margin-bottom 10px
+      margin-top -20px
 
   .appStoreButtons
     flexCenter()
@@ -116,56 +118,48 @@ section.hero
       img 
         height auto
         width 150px
+        object-fit contain
         +media600()
           width 180px
-      .unreleased
-        color $gray
-        position absolute
-        font-size 12px
-        left 0
-        right 0
-        margin 0 auto
-        text-align center
-        font-style italic
         +media1200()
-          bottom -30px 
+          width 200px
 
   .additionalLinks
     flexCenter(column)
     gap 10px
     padding-top 30px
+    .button
+      font-family 'Raleway'
     +media1200()
       flex-direction row 
       padding-top 10px
+      opacity 0.9
     a 
       width 80%
       +media1200()
         width auto
 
-  .langSupport
-    color $gray
-    display inline-block
-    font-weight bold
-    font-size 14px 
-    text-align center
-    padding-right 0
-    margin-right 0
-    padding-top 50px
-    width auto
-    +media600()
-      font-size 16px 
-    i
-      margin-right 10px
+section.intro
+  sectionYellow()
+  z-index 6
+  a
+    text-decoration underline
 
 section.partner
-  sectionYellow()
+  sectionRed()
   z-index 5
   a
     text-decoration underline
 
 section.flashcard
-  sectionRed()
+  sectionBlue()
   z-index 4
+  a
+    text-decoration underline
+
+section.path
+  sectionGreen()
+  z-index 3
   a
     text-decoration underline
 
@@ -198,7 +192,7 @@ section.blogSection
       max-width 100%
 
       &:hover .wave path
-        fill $green
+        fill $red
       .wave
         bottom 50px
         box-shadow none
@@ -208,11 +202,11 @@ section.blogSection
         transform scaleX(5) scaleY(0.5) rotate(180deg)
         z-index 55
         path
-          fill rgba($green, 0.95)
+          fill rgba($red, 0.95)
           transition fill .2s
 
     .blogImage
-      background $purple
+      background $yellow
       border-radius 5px
       boxShadow()
       display inline-block
@@ -223,7 +217,7 @@ section.blogSection
       height 100% 
       width 100% 
       &:hover .blogOverlay
-        background $green
+        background $red
       img
         object-fit cover 
         width 100%
@@ -231,7 +225,7 @@ section.blogSection
 
     .blogOverlay
       align-items flex-start
-      background rgba($green, 0.95)
+      background rgba($red, 0.95)
       border-radius 0
       bottom 0
       display flex
