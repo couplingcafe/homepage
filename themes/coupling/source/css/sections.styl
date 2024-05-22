@@ -129,6 +129,9 @@ section.howItWorks
   sectionYellow()
   z-index 10
 
+  .sectionSubtitle 
+    font-weight bold
+
   ul.howItWorksItems
     align-items center 
     display flex
@@ -142,7 +145,7 @@ section.howItWorks
       flex-direction row
       justify-content space-evenly
       margin 0 50px
-      gap 40px
+      gap 50px
 
     li
       flexCenter(column)
@@ -151,6 +154,7 @@ section.howItWorks
       +media1200()
         gap 30px
         align-items center
+        max-width 500px
 
       .text
         flexCenter(column)
