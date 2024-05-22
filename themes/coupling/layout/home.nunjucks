@@ -21,23 +21,46 @@
             <img src="/assets/img/social/googlePlay.png">
           </a>
         </div>
-
-        <div class="additionalLinks">
-          <a class="button green text-red" href="https://coupling.substack.com/p/coupling-language-together-now-available">
-            <i class="fad fa-leaf-heart"></i>
-            Read Coupling's Valentine Release
-          </a>
-
-          <a class="button blue" href="https://coupling.substack.com/p/a-complete-tour-of-coupling-cafe">
-            <i class="fad fa-flag-checkered"></i>
-            Read the App Tour
-          </a>
-        </div>
       </div>
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero2.png">
     </div>
     
+    {% include "./svg/wave.svg" %}
+  </section>
+
+  <section class="howItWorks">
+    <div class="sectionInner">
+      <h3>
+        <i class="fad fa-heart-pulse"></i>
+        How It Works
+      </h3>
+
+      <ul class="howItWorksItems">
+        <li>
+          <img src="/assets/img/screenshots/path.png">
+
+          <div class="text">
+            <h4>1. Choose Words You Want to Learn</h4>
+            <p>Select words you want to learn based on your life and interests</p>
+          </div>
+        </li>
+        <li>
+          <img src="/assets/img/screenshots/construction.png">
+          <div class="text">
+            <h4>2. Partner Adds the Words</h4>
+            <p>Your partner adds these words to your learning deck with their personal touch</p>
+          </div>
+        </li>
+        <li>
+          <img src="/assets/img/screenshots/study2.png">
+          <div class="text">
+            <h4>3. Master the Words</h4>
+            <p>Watch your language skills and relationship grow in a few minutes per day</p>
+          </div>
+        </li>
+      </ul>
+    </div>
     {% include "./svg/wave.svg" %}
   </section>
 
@@ -235,6 +258,12 @@
         started Coupling to help ourselves and other couples to make language
         learning a shared journey 
       </p>
+
+
+      <a class="button green text-red" href="https://coupling.substack.com/p/coupling-language-together-now-available">
+        <i class="fad fa-leaf-heart"></i>
+        Read More 
+      </a>
     </div>
     {% include "./svg/wave.svg" %}
   </section>
