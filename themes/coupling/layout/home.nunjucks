@@ -29,6 +29,34 @@
     {% include "./svg/wave.svg" %}
   </section>
 
+  <section class="testimonials">
+    <div class="sectionInner">
+      <ul class="testimonialList">
+        <li>
+          <i class="fad fa-stars"></i>
+          <p class="quote">
+            "I have been using Coupling for 9 hours and 500 words so far, and this
+            app has been phenomenal. As a tremendous fan of Anki...this is the one app
+            that has it beat if you are in a relationship that can take
+            advantage of it"
+          </p>
+          <p class="attr">xefjord &mdash; Creator of Xefjord's Complete Language Series and Unofficial Duolingo Discord</p> 
+        </li>
+
+        <li>
+          <i class="fad fa-rocket"></i>
+          <p class="quote">
+            "The app that has skyrocketed my learning of the Bosnian language. It
+            taps right into the motivation that comes from having a Bosnian
+            spouse and child"
+          </p>
+          <p class="attr">Gaspard &mdash; Netherlands</p> 
+        </li>
+    </div>
+
+    {% include "./svg/wave.svg" %}
+  </section>
+
   <section class="howItWorks">
     <div class="sectionInner">
       <h3>
@@ -45,22 +73,22 @@
           <img src="/assets/img/screenshots/path.png">
 
           <div class="text">
-            <h4>1. Choose Words You Want to Learn</h4>
+            <h4>1. Choose Topics You Want to Learn</h4>
             <p>Select words you want to learn based on your life and interests</p>
           </div>
         </li>
         <li>
           <img src="/assets/img/screenshots/construction.png">
           <div class="text">
-            <h4>2. Partner Adds the Words</h4>
-            <p>Your partner adds these words to your learning deck with their personal touch</p>
+            <h4>2. Your Partner Adds Their Touch</h4>
+            <p>Your partner can personalize your lessons with audio, sentences, and more</p>
           </div>
         </li>
         <li>
           <img src="/assets/img/screenshots/study2.png">
           <div class="text">
             <h4>3. Master the Words</h4>
-            <p>Watch your language skills and relationship grow in a few minutes per day</p>
+            <p>Watch your language skills and relationship grow in just a few minutes per day!</p>
           </div>
         </li>
       </ul>
