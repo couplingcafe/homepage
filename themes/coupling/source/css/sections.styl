@@ -138,14 +138,21 @@ section.testimonials
     flex-direction column 
     justify-content center
     gap 35px
+    padding 0 5px
     +media600()
       flex-direction row
+      padding 0 20px
       gap 50px
-  p
+  p, b
     color $white
     text-align center
     +media600()
+      font-size 16px
       max-width 600px
+  b 
+    color $blue
+  a
+    color $red
   li
     display flex
     flex 1
