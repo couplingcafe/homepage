@@ -25,7 +25,7 @@
 
       <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero2.png">
     </div>
-    
+
     {% include "./svg/wave.svg" %}
   </section>
 
@@ -40,7 +40,7 @@
             that has it beat</b> if you are in a relationship that can take
             advantage of it"
           </p>
-          <p class="attr">xefjord &mdash; Creator of <a href="https://xefjord.wixsite.com/xefscompletelangs">Xefjord's Complete Language Series</a> and Unofficial Duolingo Discord, learning Taiwanese Mandarin</p> 
+          <p class="attr">xefjord &mdash; Creator of <a href="https://xefjord.wixsite.com/xefscompletelangs">Xefjord's Complete Language Series</a>, learning Taiwanese Mandarin</p>
         </li>
 
         <li>
@@ -50,7 +50,7 @@
             taps right into the motivation that comes from having a Bosnian
             spouse and child"
           </p>
-          <p class="attr">Gaspard &mdash; Netherlands, learning Bosnian</p> 
+          <p class="attr">Gaspard &mdash; Netherlands, learning Bosnian</p>
         </li>
 
       <li>
@@ -60,7 +60,7 @@
             partner's language as they actually speak it</b>... Highly recommend if
             you've been frustrated by cookie-cutter formal language apps!"
           </p>
-          <p class="attr">Kat &mdash; DC, learning Taiwanese Mandarin</p> 
+          <p class="attr">Kat &mdash; DC, learning Taiwanese Mandarin</p>
         </li>
 
     </div>
@@ -125,7 +125,7 @@
           <ul class="bulletPoints">
             <li>
               <i class="fad fa-people-arrows"></i>
-              Ditch the solo grind, fuel your motivation with your partner's support 
+              Ditch the solo grind, fuel your motivation with your partner's support
             </li>
             <li>
               <i class="fad fa-message-smile"></i>
@@ -133,7 +133,7 @@
             </li>
             <li>
               <i class="fad fa-heart"></i>
-              Deepen your bond by immersing in their language and culture 
+              Deepen your bond by immersing in their language and culture
             </li>
           </ul>
         </div>
@@ -160,11 +160,11 @@
           <ul class="bulletPoints">
             <li>
               <i class="fad fa-hand-holding-heart"></i>
-              Receive personalized content lovingly handcrafted by your partner 
+              Receive personalized content lovingly handcrafted by your partner
             </li>
             <li>
               <i class="fad fa-music"></i>
-              Hear your partner's voice every step of the way with seamless audio recordings   
+              Hear your partner's voice every step of the way with seamless audio recordings
             </li>
             <li>
               <i class="fad fa-typewriter"></i>
@@ -207,7 +207,7 @@
             </li>
             <li>
               <i class="fad fa-books"></i>
-              Access audio, images, notes, or breakdowns for any word 
+              Access audio, images, notes, or breakdowns for any word
             </li>
           </ul>
         </div>
@@ -238,11 +238,11 @@
             </li>
             <li>
               <i class="fad fa-shelves"></i>
-              Explore over 500 curated packs containing thousands of words of all categories 
+              Explore over 500 curated packs containing thousands of words of all categories
             </li>
             <li>
               <i class="fad fa-person-from-portal"></i>
-              Tailor your path to meet your goals: learning first words, talking with family, visiting a country, or expressing love 
+              Tailor your path to meet your goals: learning first words, talking with family, visiting a country, or expressing love
             </li>
           </ul>
         </div>
@@ -295,17 +295,17 @@
         years <b>on his own</b>, despite Heidi always being around. We thought there
         should be a way to involve her in the process.
       </p>
-        
+
       <p>
         So we
         started Coupling to help ourselves and other couples to make language
-        learning a shared journey 
+        learning a shared journey
       </p>
 
 
       <a class="button green text-red" href="https://coupling.substack.com/p/coupling-language-together-now-available">
         <i class="fad fa-leaf-heart"></i>
-        Read More 
+        Read More
       </a>
     </div>
     {% include "./svg/wave.svg" %}
