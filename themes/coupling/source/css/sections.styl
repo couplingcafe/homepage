@@ -67,16 +67,21 @@ section.hero
     line-height 1.5
 
   .hero
+    flex-shrink 1
     overflow: hidden;
 
     video 
       border-radius: 10px;
       boxShadow()
-      width 530px
-      height 298px
-      margin 15px 0
+      object-fit contain 
+      width 320px 
+      height 180px 
       max-width 100%
+      +media600()
+        width 540px
+        height 303.75px
       +media1200()
+        boxShadow()
         margin 0
         width 795px 
         height 444px  

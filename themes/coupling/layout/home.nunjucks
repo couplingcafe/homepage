@@ -10,7 +10,7 @@
         <h2 class="title">Learn a Language From Your Partner</h2>
 
         <div class="hero heroImgMobile">
-          <video controls src="/assets/coupling.mp4"></video>
+          <video controls src="/assets/coupling.mp4" playsinline poster="/assets/img/placeholder.jpg"></video>
         </div>
 
         <p class="subtitle">Words That Stay &mdash; Bonds That Grow</p>
@@ -26,7 +26,7 @@
       </div>
 
       <div class="hero heroImgDesktop">
-        <video controls src="/assets/coupling.mp4"></video>
+        <video controls src="/assets/coupling.mp4" playsinline poster="/assets/img/placeholder.jpg"></video>
       </div>
     </div>
 
