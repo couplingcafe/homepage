@@ -42,6 +42,7 @@ section.hero
     padding-bottom 20px
     +media1200()
       flex-direction row
+      align-items center
       flex-wrap nowrap
       padding-left 30px
       padding-right 30px
@@ -65,13 +66,26 @@ section.hero
   .button
     line-height 1.5
 
-  img.hero
+  .hero
+    overflow: hidden;
+
+    video 
+      border-radius: 10px;
+      boxShadow()
+      width 530px
+      height 298px
+      margin 15px 0
+      max-width 100%
+      +media1200()
+        margin 0
+        width 795px 
+        height 444px  
+
+
     &.heroImgDesktop
       display none
-      height 600px
       max-width 100%
       margin-right -50px
-      margin-bottom -40px
       position relative
       right 60px
       +media1200()
@@ -82,7 +96,6 @@ section.hero
     &.heroImgMobile
       display inline-block
       object-fit contain 
-      max-height 400px
       max-width 100%
       +media600()
         max-height 500px
@@ -96,7 +109,7 @@ section.hero
     +media600()
       font-size 36px
     +media1200()
-      font-size 42px
+      font-size 40px
 
   .subtitle
     font-size 16px

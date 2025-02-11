@@ -7,9 +7,11 @@
           <img class="logo" src="/assets/img/logo.svg">
         </div>
 
-        <h2 class="title">The Language Learning App for Couples</h2>
+        <h2 class="title">Learn a Language From Your Partner</h2>
 
-        <img class="hero heroImgMobile" src="/assets/img/screenshots/hero2.png">
+        <div class="hero heroImgMobile">
+          <video controls src="/assets/coupling.mp4"></video>
+        </div>
 
         <p class="subtitle">Words That Stay &mdash; Bonds That Grow</p>
 
@@ -23,7 +25,9 @@
         </div>
       </div>
 
-      <img class="hero heroImgDesktop" src="/assets/img/screenshots/hero2.png">
+      <div class="hero heroImgDesktop">
+        <video controls src="/assets/coupling.mp4"></video>
+      </div>
     </div>
 
     {% include "./svg/wave.svg" %}
