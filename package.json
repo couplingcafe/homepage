@@ -6,6 +6,7 @@
     "build": "NODE_ENV=production hexo generate && NODE_ENV=production webpack",
     "clean": "hexo clean",
     "deploy": "npm run build && ghpages -p public -r git@github.com:couplingcafe/couplingcafe.github.io",
+    "ghpages2": "gh-pages -d public -r git@github.com:couplingcafe/couplingcafe.github.io",
     "start": "concurrently \"hexo generate --draft --watch\" \"live-server public\" \"webpack --watch\"",
     "substack": "node substack.js && git add src && git commit -m 'sync substack' && git push origin master && npm run deploy"
   },
@@ -13,7 +14,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/learncoupling/learncoupling.github.io.git"
+    "url": "git+https://github.com/couplingcafe/couplingcafe.github.io.git"
   },
   "author": "Coupling",
   "dependencies": {

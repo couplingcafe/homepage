@@ -23,7 +23,7 @@
   }}();
 </script>
 
-<link rel="stylesheet" href="/css/index.css?v=2">
+<link rel="stylesheet" href="/css/index.css?v=3">
 
 <body data-type="{{ page.layout }}">
   {{ body }}
