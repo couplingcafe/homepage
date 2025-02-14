@@ -13,7 +13,7 @@
           <video controls src="/assets/coupling.mp4" playsinline poster="/assets/img/placeholder.jpg"></video>
         </div>
 
-        <p class="subtitle">Words That Stay &mdash; Bonds That Grow</p>
+        <p class="subtitle">The Language Learning App for Couples</p>
 
         <div class="appStoreButtons">
           <a class="apple" href="https://apps.apple.com/us/app/coupling-language-together/id6450518454">
@@ -85,7 +85,7 @@
 
       <ul class="howItWorksItems">
         <li>
-          <img src="/assets/img/screenshots/path.png">
+          <img src="/assets/img/screenshots/2025/ChooseTopics.png">
 
           <div class="text">
             <h4>1. Choose Topics You Want to Learn</h4>
@@ -93,14 +93,14 @@
           </div>
         </li>
         <li>
-          <img src="/assets/img/screenshots/construction.png">
+          <img src="/assets/img/screenshots/2025/LessonsFromYourPartner.png">
           <div class="text">
             <h4>2. Your Partner Adds Their Touch</h4>
             <p>Your partner can personalize your lessons with audio, sentences, and more</p>
           </div>
         </li>
         <li>
-          <img src="/assets/img/screenshots/study2.png">
+          <img src="/assets/img/screenshots/2025/EnjoyFunExercises.png">
           <div class="text">
             <h4>3. Master the Words</h4>
             <p>Watch your language skills and relationship grow in just a few minutes per day!</p>
@@ -119,7 +119,7 @@
       </h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/screenshots/together.png">
+        <img src="/assets/img/screenshots/2025/LearnTogether.png">
 
         <div>
           <p class="sectionSubtitle">
@@ -154,7 +154,7 @@
       </h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/screenshots/construction.png">
+        <img src="/assets/img/screenshots/2025/HearWords.png">
 
         <div>
           <p class="sectionSubtitle">
@@ -193,11 +193,11 @@
       </h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/screenshots/study2.png">
+        <img src="/assets/img/screenshots/2025/PersonalizedSentence.png">
 
         <div>
           <p class="sectionSubtitle">
-            Never forget a word with our enhanced <a href="https://ncase.me/remember/">spaced repetition system</a>
+            Never forget a word with our enhanced spaced repetition system
           </p>
 
           <ul class="bulletPoints">
@@ -228,7 +228,7 @@
       </h3>
 
       <div class="sectionInnerColumns">
-        <img src="/assets/img/screenshots/path.png">
+        <img src="/assets/img/screenshots/2025/ChatScreen.png">
 
         <div>
           <p class="sectionSubtitle">

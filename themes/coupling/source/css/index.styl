@@ -200,9 +200,11 @@ section
     img
       object-fit contain
       margin-bottom 10px
-      max-width 640px
-      max-height 640px
+      max-height 800px
+      position relative
+      bottom 30px
       +mobile()
+        bottom 0
         max-height 480px
         max-width 100%
     > div
@@ -220,8 +222,10 @@ section
         +desktop()
           font-size 22px
     +media1200()
-      flexCenter()
+      display flex
+      flex-direction row
       align-items flex-start
+      justify-content center 
       flex-wrap nowrap
 
 section:nth-child(odd) .sectionInnerColumns
