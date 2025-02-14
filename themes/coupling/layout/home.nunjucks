@@ -80,7 +80,7 @@
       </h3>
 
       <p class="sectionSubtitle">
-        Learn any language from your partner, 100% tailored to you
+        Learn a language from your partner, 100% tailored to you
       </p>
 
       <ul class="howItWorksItems">
@@ -88,22 +88,22 @@
           <img src="/assets/img/screenshots/2025/ChooseTopics.png">
 
           <div class="text">
-            <h4>1. Choose Topics You Want to Learn</h4>
-            <p>Select words you want to learn based on your life and interests</p>
+            <h4>1. Choose a Topic You Want to Learn</h4>
+            <p>Select a word pack you want to learn</p>
           </div>
         </li>
         <li>
           <img src="/assets/img/screenshots/2025/LessonsFromYourPartner.png">
           <div class="text">
             <h4>2. Your Partner Adds Their Touch</h4>
-            <p>Your partner can personalize your lessons with audio, sentences, and more</p>
+            <p>Your partner personalizes the pack with translations, audio, sentences</p>
           </div>
         </li>
         <li>
           <img src="/assets/img/screenshots/2025/EnjoyFunExercises.png">
           <div class="text">
             <h4>3. Master the Words</h4>
-            <p>Watch your language skills and relationship grow in just a few minutes per day!</p>
+            <p>Watch your language skills grow in just a few minutes per day!</p>
           </div>
         </li>
       </ul>
@@ -123,21 +123,21 @@
 
         <div>
           <p class="sectionSubtitle">
-            Learn a language through your partner in a shared adventure
+            Learn a language through your partner in a shared journey 
           </p>
 
           <ul class="bulletPoints">
             <li>
               <i class="fad fa-people-arrows"></i>
-              Ditch the solo grind, fuel your motivation with your partner's support
+              Ditch the solo grind. Have your partner guide your learning 
             </li>
             <li>
               <i class="fad fa-message-smile"></i>
-              Avoid outdated textbook phrases. Talk like a local from their region
+              Avoid awkward textbook phrases. Learn to talk like a local 
             </li>
             <li>
               <i class="fad fa-heart"></i>
-              Deepen your bond by immersing in their language and culture
+              Celebrate milestones with surprise gifts for each other
             </li>
           </ul>
         </div>
@@ -164,19 +164,19 @@
           <ul class="bulletPoints">
             <li>
               <i class="fad fa-hand-holding-heart"></i>
-              Receive personalized content lovingly handcrafted by your partner
+              Get all your learning content personalized by your partner
             </li>
             <li>
               <i class="fad fa-music"></i>
-              Hear your partner's voice every step of the way with seamless audio recordings
+              Hear your partner's voice speak words with audio recordings
             </li>
             <li>
               <i class="fad fa-typewriter"></i>
-              Immerse with crafted sentences tailored to your life and relationship
+              Learn sentences that are actually relevant to your life 
             </li>
             <li>
-              <i class="fad fa-person-chalkboard"></i>
-              Introduce content effortlessly with an intuitive interface with AI assistance
+              <i class="fad fa-hands-holding"></i>
+              AI assists your partner every step of the way
             </li>
           </ul>
         </div>
@@ -197,21 +197,21 @@
 
         <div>
           <p class="sectionSubtitle">
-            Never forget a word with our enhanced spaced repetition system
+            A fun and effective learning system that has your partner's touch
           </p>
 
           <ul class="bulletPoints">
             <li>
+              <i class="fad fa-face-party"></i>
+              Enjoy fun bite-sized lessons with a variety of exercises 
+            </li>
+            <li>
               <i class="fad fa-timer"></i>
-              Review words just before you forget them for guaranteed retention
+              Never forget a word with our enhanced spaced repetition system
             </li>
             <li>
-              <i class="fad fa-chart-line"></i>
-              Spend less time on mastered words, freeing up time for new ones
-            </li>
-            <li>
-              <i class="fad fa-books"></i>
-              Access audio, images, notes, or breakdowns for any word
+              <i class="fad fa-hammer"></i>
+              Get breakdowns of phrases to learn what each individual word means
             </li>
           </ul>
         </div>
@@ -238,15 +238,15 @@
           <ul class="bulletPoints">
             <li>
               <i class="fad fa-person-rays"></i>
-              Learn what matters most to you, your relationship, your interests, and your daily life
+              Learn what matters most to you and your daily life
             </li>
             <li>
               <i class="fad fa-shelves"></i>
-              Explore over 500 curated packs containing thousands of words of all categories
+              Explore over 500 packs containing thousands of words of all categories
             </li>
             <li>
               <i class="fad fa-person-from-portal"></i>
-              Tailor your path to meet your goals: learning first words, talking with family, visiting a country, or expressing love
+              Tailor your path to meet your personal goals
             </li>
           </ul>
         </div>
