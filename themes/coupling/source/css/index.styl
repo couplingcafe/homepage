@@ -194,9 +194,13 @@ section
 
   .sectionInnerColumns
     flexCenter(column)
+    padding 0 10px
     gap 20px
+    +media600()
+      padding 0 20px
     +media1200()
       gap 40px
+      padding 0 60px
     img
       object-fit contain
       margin-bottom 10px

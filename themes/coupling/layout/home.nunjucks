@@ -35,14 +35,15 @@
 
   <section class="testimonials">
     <div class="sectionInner">
+
       <ul class="testimonialList">
         <li>
           <i class="fad fa-stars"></i>
           <p class="quote">
-            "I have been using Coupling for 9 hours and 500 words so far, and this
+            “I have been using Coupling for 9 hours and 500 words so far, and this
             app has been phenomenal. <b>As a tremendous fan of Anki...this is the one app
             that has it beat</b> if you are in a relationship that can take
-            advantage of it"
+            advantage of it” 
           </p>
           <p class="attr">xefjord &mdash; Creator of <a href="https://xefjord.wixsite.com/xefscompletelangs">Xefjord's Complete Language Series</a>, learning Taiwanese Mandarin</p>
         </li>
@@ -50,23 +51,24 @@
         <li>
           <i class="fad fa-rocket"></i>
           <p class="quote">
-            "<b>The app that has skyrocketed my learning of the Bosnian language</b>. It
+            “<b>The app that has skyrocketed my learning of the Bosnian language</b>. It
             taps right into the motivation that comes from having a Bosnian
-            spouse and child"
+            spouse and child” 
+
           </p>
           <p class="attr">Gaspard &mdash; Netherlands, learning Bosnian</p>
         </li>
 
-      <li>
+        <li>
           <i class="fad fa-cookie-bite"></i>
           <p class="quote">
-            "I love this app. <b>Coupling has been amazing for learning my
+            “ love this app. <b>Coupling has been amazing for learning my
             partner's language as they actually speak it</b>... Highly recommend if
-            you've been frustrated by cookie-cutter formal language apps!"
+            you've been frustrated by cookie-cutter formal language apps!” 
           </p>
           <p class="attr">Kat &mdash; DC, learning Taiwanese Mandarin</p>
         </li>
-
+      </ul>
     </div>
 
     {% include "./svg/wave.svg" %}
@@ -254,6 +256,11 @@
   <section class="blogSection">
     <div class="sectionInner">
       <h3>Blog</h3>
+
+      <div class="quote">
+        <p>”Speak to someone in a language they understand, that goes to the head.</p>
+        <p>Talk to them in their language, that goes to the heart”</p>
+      </div>
 
       <ul class="blog">
       {% for blog in site.data.blog %}
